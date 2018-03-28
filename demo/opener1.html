@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>子页面关系</title>
+<script type="text/javascript">
+var cls=function(){
+	try{
+		window.opener.reload();
+	}catch(e){}
+	window.close();	
+}
+
+</script>
+</head>
+
+<body>
+<input type="button" style="width:200px;height:200px;" onclick="cls()" value="点击 关闭，刷新父页面">
+</body>
+</html>

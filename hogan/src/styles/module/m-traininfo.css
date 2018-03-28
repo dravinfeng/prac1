@@ -1,0 +1,45 @@
+/** 
+* @description: 车次信息-价格信息css
+* @author: assassin.liu  
+* @update: 14-3-3-下午1:48
+*/
+.m-traininfo{ font-size:14px; padding-bottom:10px; }
+.m-traininfo .pl01{ padding-left:10px; }
+.m-traininfo .fz01{ font-size:18px; }
+.m-traininfo .csSlist a{ line-height:24px; }
+.traininfo-hd{ background:#dbf5f3; height:30px; line-height:30px; border-left:solid 2px #52c5bb; padding-left:8px; font-size:14px; font-weight:700; }
+.traininfo-bd .cell03 strong{ width:16px; height:16px; display:inline-block; }
+.traininfo-bd .cell04{ font-weight:700; color:#ff075b; }
+.traininfo-bd .cell04 .date{ display:inline-block; width:65px; }
+.traininfo-bd .hour{ color:#333 }
+.traininfo-bd{ padding:0 15px 0 32px; }
+.traininfo-bd h3{ padding-bottom:10px; margin-left:-8px; }
+.traininfo-bd .g-table{ font-size:12px; }
+/* {单程 */
+    /* 价格信息select */
+.traininfo-bd .chooseseat{ line-height:30px; margin-top:10px; font-size:12px;  }
+.traininfo-bd .cnm1 {  text-align: left; float: left; margin-right:10px; font-weight: 100; line-height:30px; }
+.traininfo-bd .seattype{ margin-right:22px; }
+.traininfo-bd .seattype .csSelect{ width:122px; }
+.traininfo-bd .seattype .csStitle{ width:110px; }
+.traininfo-bd .chooseseat .labelbox{ float:left; width:600px; }
+.traininfo-bd .labelbox .seat-title{ text-align:left; display:inline-block; _margin-top:-7px; margin-right:7px; vertical-align:top; }
+.traininfo-bd .labelbox .seat{ display:inline-block; width:87px; margin-left:-3px;  }
+.traininfo-bd .chooseseat .ticket-seat{ _margin-top:8px; }
+.chooseseat .labelbox .g-tips{ /* display:none;*/ position:relative;}
+.traininfo-bd .chooseseat .arrow-out,
+.traininfo-bd .chooseseat .arrow-in{ left:23px; }
+    /* 错误 */
+.traininfo-bd .plus-td{  }
+.traininfo-bd .orangebg { background: #fefee6; }
+.traininfo-bd .candidate{ position:relative; display:block; z-index:2; }
+.traininfo-bd .plus-td .g-tips{ position: absolute; width: 164px; top:26px; _top:20px; left: 18px; _left: -40px; z-index: 1000; text-align: left; border:solid 1px #babbc1;
+ background:#fff; }
+.traininfo-bd .g-table .arrow-out{ border-color:transparent  transparent #babbc1 transparent; }
+.traininfo-bd .g-table .arrow-in{ border-color:transparent transparent #fff transparent; }
+.traininfo-bd .keynote{ font-size:12px; padding:5px 0 7px; }
+/* 单程} */
+/* time baoguo.wang create*/
+.txtright{text-align:right;width:58px;display: inline-block; color:red; font-weight:bold;}
+.txtleft{text-align:left; width:60px;display: inline-block;margin-left: 15px;}
+/*//time*/

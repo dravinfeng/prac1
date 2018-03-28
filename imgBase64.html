@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+		body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=您的密钥"></script>
+	<title>IP定位获取当前城市</title>
+</head>
+<body>
+	<img id="img" style="display: none" src="img/a1.jpg" />
+	<canvas id="canvs"></canvas>
+</body>
+</html>
+<script type="text/javascript">
+function convertImageToCanvas(image) {
+// 创建canvas DOM元素，并设置其宽高和图片一样
+canvas = document.getElementById("canvs");
+canvas.width = image.width;
+canvas.height = image.height;
+// 坐标(0,0) 表示从此处开始绘制，相当于偏移。
+canvas.getContext("2d").drawImage(image, 0, 0);
+return canvas;
+}
+var canvas=convertImageToCanvas(document.getElementById('img'));
+//convertImageToCanvas('http://ubmcmm.baidustatic.com/media/v1/0f00009DjTVgEYRtzKJ2Uf.jpg');
+// var img=new Image();
+// img.src=canvas.toDataURL("image/png");
+console.log(canvas.toDataURL("image/png"))
+</script>

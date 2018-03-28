@@ -1,0 +1,7 @@
+.dx_layer_search{ border:1px #dedfe0 solid; width:367px; overflow:hidden; background:#fff;}
+.dx_layer_search .search_menu{ font-size:0px;}
+.dx_layer_search .search_menu li a{ display:block; height:24px; overflow:hidden; color:#555; font-size:12px; }
+.dx_layer_search .search_menu li a:hover{ text-decoration:none;}
+.dx_layer_search .search_menu li.current a,.dx_layer_search .search_menu li a:hover{ background:#4778da; color:#fff;}
+.dx_layer_search .search_menu li a .menu_name{ float:left; height:24px; line-height:24px; margin-left:8px;}
+.dx_layer_search .search_menu li a .menu_num{ float:right; height:24px; line-height:24px; margin-right:9px;}

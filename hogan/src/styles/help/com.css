@@ -1,0 +1,27 @@
+
+/*public*/
+.pubnav,.header .cust_phone,.banner,.icon_war,.title_city h3,.title_nm .sec_tip,.step li.jt,.icon_begin,.icon_over,.icon_arrive,.icon_end,.btnDel,.bt_sure em,.dwr b.exp,.dwr b.col,.icon_down,.bt_submit em,.icon_correct,.bt_reccode em,.bt_unccode em{background:url(http://source.qunar.com/train_tts/train_pay.png) no-repeat 0px 0px;}
+/*pubnav*/
+.pubnav{height:32px;background-position:0px 0px;background-repeat:repeat-x;}
+.bd_pt10{border-bottom:#e4e4e4 1px solid;padding-bottom:10px;margin-bottom:10px;}
+.orang_bg{border:#f9dfb2 1px solid;background:#fefee6;}
+.title_tips{margin-left: 10px;font-size: 11px;font-weight: normal;}
+/*header*/
+.header{padding:4px 0px 5px 0px;}
+.header .cust_phone{padding-left:40px;height:23px;background-position:-200px -42px;line-height:22px;}
+.header .cust_phone strong{font-weight:100;font-family:Arial;}
+.header .login_wrap{ float:right; display:inline;word-spacing:4px;line-height:22px;}
+.header .login_wrap a {color:#555; }
+.header .login_wrap a:hover { color:#f60; }
+
+/*banner*/
+.banner{height:78px;background-position:100% -74px;border-bottom:#81d8d0 2px solid;overflow:hidden;}
+.banner .logo{float:left;height:78px;overflow:hidden;}
+.banner .logo img{vertical-align:middle;cursor:pointer;}
+.banner .qnba{float:left;margin:13px 0px 0px 20px;display:inline;width:167px;height:55px;background:url(http://source.qunar.com/train_tts/icon_dbt.gif) no-repeat left top;text-indent:-99999em;}
+.banner .msg{width:435px;float:right;text-align:right;margin-top:20px;color:#0086a0;line-height:20px;position:relative;}
+.banner .msg .tm{margin-right:10px;}
+.banner .msg em{color:#ff075b;font-family:Arial;}
+
+/*footer*/
+.footer{color:#888888;padding:15px 0px;border-top:#dddddd 1px solid;}

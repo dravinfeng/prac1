@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../commCss/css/smoothness/jquery-ui-1.10.1-srclist.css" rel="stylesheet"></link>
+<link href="../commCss/css/reset.css" rel="stylesheet"></link>
+<script src="../commCss/js/jquery-srclist.js" type="text/javascript"></script>
+<script src="../commCss/js/jquery-ui-1.10.1-srclist.js" type="text/javascript"></script>
+<script src="../core/STK.js" type="text/javascript"></script>
+<script src="../core/util/easyTemplate.js" type="text/javascript"></script>
+<title>template</title>
+<script type="text/javascript">
+var easyTemp=STK.core.util.easyTemplate;
+</script>
+</head>
+
+<body>
+
+<div id="J_DcTopRightWrap"></div>
+
+<script>
+	var ls=[{k:"k1",v:[1,2,3]},{k:"k2",v:[1,2,3]},{k:"k3",v:[1,2,3]},{k:"k4",v:[1,2,3]},{k:"k5",v:[1,2,3]}];
+	var tt=['<#et imgViewer d>',
+	'<#list d as list>',
+	   '${list.k}<br>',
+	   	'<#list list.v as ls>',
+	   		'${ls}<br>',
+	   	'</#list>',
+     '</#list>',
+	'<div ></#et>'].join('');
+	document.write(easyTemp(tt,ls));
+</script>
+</body>
+</html>

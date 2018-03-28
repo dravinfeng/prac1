@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>父页面关系</title>
+<script type="text/javascript">
+	var reload=function(){
+		window.location.reload();
+	}
+	var pop=function(){
+		window.open('http://fe.dev.com/prac/demo/opener1.html');
+	}
+</script>
+</head>
+
+<body onload="alert(1)">
+<input type="button" style="width:200px;height:200px;" onclick="pop()" value="点击 弹出子页面">
+</body>
+</html>

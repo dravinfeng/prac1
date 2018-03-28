@@ -1,0 +1,25 @@
+<html>
+    <head>
+    <title>scan</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no,minimal-ui" /> 
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+    </head>
+    <body>
+    
+    <input type="button" value="click" onclick="aa()" />
+    <script>
+    aa=function(){
+		 wx.scanQRCode({
+		    needResult: 0, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
+		    scanType: ["qrCode","barCode"], // 可以指定扫二维码还是一维码，默认二者都有
+		    success: function (res) {
+		    var result = res.resultStr; // 当needResult 为 1 时，扫码返回的结果
+		    alert(result);
+		}
+		});
+	}
+    </script>
+    
+    </body>
+    </html>

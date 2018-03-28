@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>获取正整数二进制中1的个数</title>
+  <script src="http://music.taihe.com/theme/js/jquery-1.9.1.min.js"></script>
+  <script src="./echarts.common.min.js"></script>
+</head>
+
+<body>
+	<div style="width:100%;height:500px;" id="main"></div>
+
+<script type="text/javascript">
+var DATA=[];
+    // 基于准备好的dom，初始化echarts实例
+var myChart = echarts.init(document.getElementById('main'));
+
+// 指定图表的配置项和数据
+var option = {
+    title: {
+        text: '2001年 至今价格'
+    },
+    tooltip: {
+    },
+    legend: {
+    	data:['价格']
+    },
+    xAxis: {
+        data:[]
+    },
+    yAxis: {
+        
+    },
+    series: [{
+        name: '价格',
+        type: 'bar',
+        data: []
+    }]
+};
+
+
+var format=function(tm){
+	if(tm<10){
+		return '0'+tm;
+	}else{
+		return tm;
+	}
+}
+var dt=new Date();
+var dtStr=dt.getFullYear()+'-'+format(dt.getMonth()+1)+'-'+format(dt.getDate());
+var days=Math.floor((dt-new Date('2001/01/01'))/(24*60*60*1000));
+$.ajax('http://data.gold.hexun.com/outdata/GoldHistoryData.ashx',{
+	data:{
+		'p':'老凤祥',
+		'c':'足金价格',
+		'sdate':'2001-01-01',
+		'edate':dtStr,
+		'count':days
+	},
+	dataType:'jsonp',
+	success:function(rs){
+		DATA=rs.list;
+		DATA=DATA.reverse();
+		$.each(DATA,function(i,d){
+			option.xAxis.data.push(d.fld_secudate);
+			option.series[0].data.push(d.fld_newprice);
+		});
+		
+		myChart.setOption(option);
+	}
+});
+
+
+
+
+
+    // 使用刚指定的配置项和数据显示图表。
+   // myChart.setOption(option);
+</script>
+</body>
+</html>

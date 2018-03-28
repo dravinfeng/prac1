@@ -1,0 +1,36 @@
+/** 
+* @description: 模拟表格
+* @author: assassin.liu  
+* @update: 14-3-3-下午1:53
+*/
+    /* 模拟table */
+.g-table .tr .edge{ width: 0; height: 100%; display: inline-block; vertical-align: middle; }
+.g-table .tr:after,
+.g-table .th,.g-table .td{font-size:14px;font-family:tahoma, sans-serif;letter-spacing:normal;word-spacing:normal;}
+.g-table .tr:after,
+.g-table .th,
+.g-table .td{display:inline-block;*display:inline;*zoom:1;vertical-align:middle; line-height:24px;}
+.g-table .tr .after,
+.g-table .tr:after{height:100%;content:"\0020";}
+.g-table .th,
+.g-table .td{word-wrap:break-word;word-break:break-all;}
+.g-table .thead .tr{ background-color:#3c71d3; line-height:20px; color:#fff; padding:3px 0; }
+.g-table .tbody .tr{ padding:10px 0 8px 0; zoom:1;}
+.g-table .tbody{ padding-bottom:10px; }
+.g-table .cell01{ width:120px; }
+.g-table .cell02{ width:180px; }
+.g-table .cell03{ width:192px; }
+.g-table .cell04{ width:234px; }
+.g-table .cell05{ width:150px; }
+.g-table .cell06{ width:182px; }
+.g-table .cell07{ width:187px; }
+.g-table .cell08{ width:95px; }
+.g-table .cell09{}
+.g-table .cell10{ width:190px; }
+.g-table .cell11{ width:155px; }
+.g-table .cell12{ width:90px; }
+.g-table .cell13{ width:90px; }
+    /* 原始table */
+.g-table  .table-original{ border-left:solid 1px #e4e4e4; border-top:solid 1px #e4e4e4; width:100%; text-align:center; }
+.g-table  .table-original th,
+.g-table  .table-original td{ border-bottom:solid 1px #e4e4e4; border-right:solid 1px #e4e4e4; padding:7px 5px; line-height:24px; font-weight:400; }

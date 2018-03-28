@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>delete null in array</title>
+
+		<script src="http://qunarzz.com/mobile_platform/prd//core/jquery-2012082710491402.js"></script>
+			<script type="text/javascript">
+			var func1,func2,ss,info;
+			window.onload=function(){
+				info=document.getElementById('info');
+			}
+			var start=function(){
+				ss=new Date().getTime();
+			}
+			var end=function(){
+				var end=new Date().getTime()-ss;
+				info.innerHTML=end;
+			}
+			var B=[2,null,"z","a",2,0,"z",null,"a","a",null,"a",2,0,"z",null,0,1,"a","a","a","z","z",3,null,0,"a","z","z",2,"a","a",null,3,null,2,0,3,null,3,null,"z","a",1,null,null,null,3,"a",null,1,null,"z",0,1,1,"a","a",1,1,3,null,null,"a",1,"a","z","z",2,1,2,1,null,"a",0,null,"a",null,0,"a",2,0,"z",1,3,"a","a",3,"a","a",2,null,"z",null,null,"a","z","z","a","a",2,null,"z","a",2,0,"z",null,"a","a",null,"a",2,0,"z",null,0,1,"a","a","a","z","z",3,null,0,"a","z","z",2,"a","a",null,3,null,2,0,3,null,3,null,"z","a",1,null,null,null,3,"a",null,1,null,"z",0,1,1,"a","a",1,1,3,null,null,"a",1,"a","z","z",2,1,2,1,null,"a",0,null,"a",null,0,"a",2,0,"z",1,3,"a","a",3,"a","a",2,null,"z",null,null,"a","z","z","a","a",2,null,"z","a",2,0,"z",null,"a","a",null,"a",2,0,"z",null,0,1,"a","a","a","z","z",3,null,0,"a","z","z",2,"a","a",null,3,null,2,0,3,null,3,null,"z","a",1,null,null,null,3,"a",null,1,null,"z",0,1,1,"a","a",1,1,3,null,null,"a",1,"a","z","z",2,1,2,1,null,"a",0,null,"a",null,0,"a",2,0,"z",1,3,"a","a",3,"a","a",2,null,"z",null,null,"a","z","z","a","a",2,null,"z","a",2,0,"z",null,"a","a",null,"a",2,0,"z",null,0,1,"a","a","a","z","z",3,null,0,"a","z","z",2,"a","a",null,3,null,2,0,3,null,3,null,"z","a",1,null,null,null,3,"a",null,1,null,"z",0,1,1,"a","a",1,1,3,null,null,"a",1,"a","z","z",2,1,2,1,null,"a",0,null,"a",null,0,"a",2,0,"z",1,3,"a","a",3,"a","a",2,null,"z",null,null,"a","z","z","a","a",2,null,"z","a",2,0,"z",null,"a","a",null,"a",2,0,"z",null,0,1,"a","a","a","z","z",3,null,0,"a","z","z",2,"a","a",null,3,null,2,0,3,null,3,null,"z","a",1,null,null,null,3,"a",null,1,null,"z",0,1,1,"a","a",1,1,3,null,null,"a",1,"a","z","z",2,1,2,1,null,"a",0,null,"a",null,0,"a",2,0,"z",1,3,"a","a",3,"a","a",2,null,"z",null,null,"a","z","z","a","a",2,null,"z","a",2,0,"z",null,"a","a",null,"a",2,0,"z",null,0,1,"a","a","a","z","z",3,null,0,"a","z","z",2,"a","a",null,3,null,2,0,3,null,3,null,"z","a",1,null,null,null,3,"a",null,1,null,"z",0,1,1,"a","a",1,1,3,null,null,"a",1,"a","z","z",2,1,2,1,null,"a",0,null,"a",null,0,"a",2,0,"z",1,3,"a","a",3,"a","a",2,null,"z",null,null,"a","z","z","a","a",2,null,"z","a",2,0,"z",null,"a","a",null,"a",2,0,"z",null,0,1,"a","a","a","z","z",3,null,0,"a","z","z",2,"a","a",null,3,null,2,0,3,null,3,null,"z","a",1,null,null,null,3,"a",null,1,null,"z",0,1,1,"a","a",1,1,3,null,null,"a",1,"a","z","z",2,1,2,1,null,"a",0,null,"a",null,0,"a",2,0,"z",1,3,"a","a",3,"a","a",2,null,"z",null,null,"a","z","z","a","a",2,null,"z","a",2,0,"z",null,"a","a",null,"a",2,0,"z",null,0,1,"a","a","a","z","z",3,null,0,"a","z","z",2,"a","a",null,3,null,2,0,3,null,3,null,"z","a",1,null,null,null,3,"a",null,1,null,"z",0,1,1,"a","a",1,1,3,null,null,"a",1,"a","z","z",2,1,2,1,null,"a",0,null,"a",null,0,"a",2,0,"z",1,3,"a","a",3,"a","a",2,null,"z",null,null,"a","z","z","a","a",2,null,"z","a",2,0,"z",null,"a","a",null,"a",2,0,"z",null,0,1,"a","a","a","z","z",3,null,0,"a","z","z",2,"a","a",null,3,null,2,0,3,null,3,null,"z","a",1,null,null,null,3,"a",null,1,null,"z",0,1,1,"a","a",1,1,3,null,null,"a",1,"a","z","z",2,1,2,1,null,"a",0,null,"a",null,0,"a",2,0,"z",1,3,"a","a",3,"a","a",2,null,"z",null,null,"a","z","z","a","a",2,null,"z","a",2,0,"z",null,"a","a",null,"a",2,0,"z",null,0,1,"a","a","a","z","z",3,null,0,"a","z","z",2,"a","a",null,3,null,2,0,3,null,3,null,"z","a",1,null,null,null,3,"a",null,1,null,"z",0,1,1,"a","a",1,1,3,null,null,"a",1,"a","z","z",2,1,2,1,null,"a",0,null,"a",null,0,"a",2,0,"z",1,3,"a","a",3,"a","a",2,null,"z",null,null,"a","z","z","a","a",2,null,"z","a",2,0,"z",null,"a","a",null,"a",2,0,"z",null,0,1,"a","a","a","z","z",3,null,0,"a","z","z",2,"a","a",null,3,null,2,0,3,null,3,null,"z","a",1,null,null,null,3,"a",null,1,null,"z",0,1,1,"a","a",1,1,3,null,null,"a",1,"a","z","z",2,1,2,1,null,"a",0,null,"a",null,0,"a",2,0,"z",1,3,"a","a",3,"a","a",2,null,"z",null,null,"a","z","z","a","a",2,null,"z","a",2,0,"z",null,"a","a",null,"a",2,0,"z",null,0,1,"a","a","a","z","z",3,null,0,"a","z","z",2,"a","a",null,3,null,2,0,3,null,3,null,"z","a",1,null,null,null,3,"a",null,1,null,"z",0,1,1,"a","a",1,1,3,null,null,"a",1,"a","z","z",2,1,2,1,null,"a",0,null,"a",null,0,"a",2,0,"z",1,3,"a","a",3,"a","a",2,null,"z",null,null,"a","z","z","a","a",2,null,"z","a",2,0,"z",null,"a","a",null,"a",2,0,"z",null,0,1,"a","a","a","z","z",3,null,0,"a","z","z",2,"a","a",null,3,null,2,0,3,null,3,null,"z","a",1,null,null,null,3,"a",null,1,null,"z",0,1,1,"a","a",1,1,3,null,null,"a",1,"a","z","z",2,1,2,1,null,"a",0,null,"a",null,0,"a",2,0,"z",1,3,"a","a",3,"a","a",2,null,"z",null,null,"a","z","z","a","a",2,null,"z","a",2,0,"z",null,"a","a",null,"a",2,0,"z",null,0,1,"a","a","a","z","z",3,null,0,"a","z","z",2,"a","a",null,3,null,2,0,3,null,3,null,"z","a",1,null,null,null,3,"a",null,1,null,"z",0,1,1,"a","a",1,1,3,null,null,"a",1,"a","z","z",2,1,2,1,null,"a",0,null,"a",null,0,"a",2,0,"z",1,3,"a","a",3,"a","a",2,null,"z",null,null,"a","z","z","a","a",2,null,"z","a",2,0,"z",null,"a","a",null,"a",2,0,"z",null,0,1,"a","a","a","z","z",3,null,0,"a","z","z",2,"a","a",null,3,null,2,0,3,null,3,null,"z","a",1,null,null,null,3,"a",null,1,null,"z",0,1,1,"a","a",1,1,3,null,null,"a",1,"a","z","z",2,1,2,1,null,"a",0,null,"a",null,0,"a",2,0,"z",1,3,"a","a",3,"a","a",2,null,"z",null,null,"a","z","z","a","a",2,null,"z","a",2,0,"z",null,"a","a",null,"a",2,0,"z",null,0,1,"a","a","a","z","z",3,null,0,"a","z","z",2,"a","a",null,3,null,2,0,3,null,3,null,"z","a",1,null,null,null,3,"a",null,1,null,"z",0,1,1,"a","a",1,1,3,null,null,"a",1,"a","z","z",2,1,2,1,null,"a",0,null,"a",null,0,"a",2,0,"z",1,3,"a","a",3,"a","a",2,null,"z",null,null,"a","z","z","a","a",2,null,"z","a",2,0,"z",null,"a","a",null,"a",2,0,"z",null,0,1,"a","a","a","z","z",3,null,0,"a","z","z",2,"a","a",null,3,null,2,0,3,null,3,null,"z","a",1,null,null,null,3,"a",null,1,null,"z",0,1,1,"a","a",1,1,3,null,null,"a",1,"a","z","z",2,1,2,1,null,"a",0,null,"a",null,0,"a",2,0,"z",1,3,"a","a",3,"a","a",2,null,"z",null,null,"a","z","z","a","a",2,null,"z","a",2,0,"z",null,"a","a",null,"a",2,0,"z",null,0,1,"a","a","a","z","z",3,null,0,"a","z","z",2,"a","a",null,3,null,2,0,3,null,3,null,"z","a",1,null,null,null,3,"a",null,1,null,"z",0,1,1,"a","a",1,1,3,null,null,"a",1,"a","z","z",2,1,2,1,null,"a",0,null,"a",null,0,"a",2,0,"z",1,3,"a","a",3,"a","a",2,null,"z",null,null,"a","z","z","a","a"];
+			var a=[];
+			
+
+			var makeData=function(){
+				var r;
+				a=[];
+				for(var i=0;i<1800;i++){
+					a.push(B[i]);
+//					r=parseInt(Math.random()*10,10);
+//					if(r>5 && r<8){
+//						a.push('a');
+//					}else if(r>7){
+//						a.push('z');
+//					}else if(r>3 && r<6){
+//						a.push(null);
+//					}else{
+//						a.push(r);
+//					}
+				}			
+			}
+
+
+			
+			func1=function(){
+				makeData();
+				start();
+				console.log(a);
+				a.sort(function(a,b){
+					if(a==null){
+						return true
+					}
+					return false;
+				});
+
+				for(var i=0;i<a.length;i++){
+					if(a[i]===null){
+						a.splice(i);
+						break;
+					}
+				}
+				console.log(a);
+				end();
+			}
+			func2=function(){
+				makeData();
+				start();
+				console.log(a);
+				for(var i=0;i<a.length;i++){
+					if(!a[i]){
+						a.splice(i,1);
+						i--;
+					}
+				}
+				console.log(a);
+				end();
+			}
+		</script>
+		<script>
+		var join,add;
+		(function(){
+			var a=[];
+			var makeData=function(){
+				var r;
+				for(var i=0;i<200000;i++){
+					 //a.push('1');
+                    //a.push('11');
+                    //a.push('111');
+                    //a.push('1111');
+                   //第二组测试
+                   // a.push('a');
+                    //a.push('aa');
+                    //a.push('aaa');
+                   //a.push('aaaa');
+ 
+                   //第三组测试
+                    //a.push('我');
+                    //a.push('我我');
+                    //a.push('我我我');
+                    a.push('我我我我我我我我窝窝我是手册阿萨德vagdag我我是手册阿萨德vagdag我我是手册阿萨德vagdag我');
+					//我是测试啊我是手册阿萨德vagdag我是测试啊我是手册阿萨德vagdag我是测试啊我是手册阿萨德vagda
+				}			
+			}
+			makeData();
+			join=function(){
+				start();
+				var b='';
+				b=a.join('');
+				end();
+				//console.log(b);
+			}
+			add=function(){
+				start();
+				var b='';
+				for(var i=0;i<a.length;i++){
+					b+=a[i];
+				}
+				end();
+				//console.log(b);
+			}
+		})();
+		</script>
+	</head>
+	<body>
+		<input type="button" value="start1" onclick="func1()" /><input type="button" onclick="func2()" value="start2" />
+		<br>
+		<input type="button" value="string add" onclick="add()" /><input type="button" onclick="join()" value="arr join" />
+		<div id="info"></div>
+	
+	</body>
+</html>

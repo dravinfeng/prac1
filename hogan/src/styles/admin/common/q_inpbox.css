@@ -1,0 +1,16 @@
+.q_inpbox{padding:1px 2px 0px 2px; border:1px solid #bbb;height:27px; font-size:12px;line-height:27px;background-color:#fff;display:inline-block;width:104px;zoom:1;vertical-align: middle; *display:inline;*vertical-align:top;}
+.q_inpbox input{ border:0; background:transprent; outline:none; height:26px; width:100%; padding:0; margin:0; display: block; font-size:14px; }
+.q_inpbox_disable{ background-color:#F3F3F3;}
+.q_inpbox_err{border-color:#FE0053;}
+
+.q_inpbox .p_inp_tw{ position:relative; display:none; width:100%; z-index: 60;}
+.q_inpbox .p_inp_tw .p_inp_tc{ position: absolute; left:-3px; top:27px; background: #FFFEDF;border: 1px solid #F8D3A7; z-index: 10;vertical-align: middle;word-break: break-all; word-wrap: break-word;padding:6px 4px; width:100px; line-height:18px;}
+.q_inpbox .p_inp_tw .p_inp_tc .p_tips_ico{ float:left; display:block; width:20px; padding-top:1px;}
+.q_inpbox .p_inp_tw .p_inp_tc .p_tips_ico .ico_err_s{ background: url("http://source.qunar.com/train_tts/ico_pro.png") no-repeat scroll 0 -380px;display: inline-block; height: 16px; overflow: hidden;width: 16px;}
+.q_inpbox .p_inp_tw .p_inp_tc .p_tips_txt{ display:block; padding-left:20px; zoom:1; *padding-left:0;}
+
+.q_inpbox_err .p_inp_tw{ display:block;}
+
+
+.q_inpbox .p_inp_enlarge{ position:relative;}
+.q_inpbox .p_inp_enlarge .p_inp_lc{ position: absolute; left:-3px; top:-41px; background: #ffffeb;border: 1px solid #bbb; z-index: 90;vertical-align: middle;word-break: break-all; word-wrap: break-word; white-space:nowrap;padding:6px 4px;line-height:18px; font:bold 24px/26px Tahoma; overflow:visible;}

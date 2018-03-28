@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>获取正整数二进制中1的个数</title>
+  
+</head>
+
+<body>
+	
+	<pre>aaaaaaaaaaaaaaaaaa</pre>
+<script type="text/javascript">
+var a=function(num){
+	// return num.toString(2).match(/1/g).length;
+	return num.toString(2).split('0').join('').length;
+	// c=0;
+// n=num;
+// while(n>0){
+  // n%2 && c++;
+  // n=Math.floor(n/2);
+// }
+
+return c;
+}
+console.time('a');
+
+for(var i=0;i<100000;i++){
+	a(65533);
+}
+console.timeEnd('a');
+
+
+function test(){
+	var x=10;
+	var y=20;
+	return function(){
+		alert(x);
+		alert(y);
+	}
+}
+
+var x=30;
+var y=40;
+var temp=test();
+temp();
+</script>
+</body>
+</html>

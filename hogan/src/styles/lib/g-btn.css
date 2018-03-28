@@ -1,0 +1,28 @@
+/*
+* module: g-btn
+* Author: baoguo.wang@qunar.com
+* Time: 2014.6.13
+*/
+.g-btn,.g-btn span,.g-btn button,.g-btn input{display:inline-block;border-radius:2px;vertical-align:top;cursor:pointer;}
+.g-btn{overflow:hidden;padding:1px;border:1px solid #aaa;background-color:#aaa;font-size:12px;text-align:center;white-space:nowrap; background-image: none;}
+.g-btn span,.g-btn button,.g-btn input{overflow:visible;border:0 none;background:none;padding:0 10px;color:#fff;}
+.g-btn:hover span,.g-btn:hover button,.g-btn:hover input{color:#fff;}
+
+/* type of button */
+.g-btn-s span,.g-btn-s button,.g-btn-s input{height:18px; line-height:16px\0;*line-height:19px;}
+:root .g-btn-s span,.g-btn-s button,.g-btn-s input{line-height:17px;}
+.g-btn-m span,.g-btn-m button,.g-btn-m input{height:26px;font-size:14.004px;line-height:26px;}
+.g-btn-l span,.g-btn-l button,.g-btn-l input{height:32px;font-size:14.004px;line-height:32px;}
+
+/* 蓝色按钮 */
+.g-btn-commit{border-color:#0b5aee;background-color:#0b5aee;}
+.g-btn-commit span,.g-btn-commit button,.g-btn-commit input{background-color:#0b5aee;}
+.g-btn-commit:hover{border-color:#1d6af7;background-color:#1d6af7;}
+.g-btn-commit:hover span,.g-btn-commit:hover button,.g-btn-commit:hover input{background-color:#1d6af7;}
+
+/* 灰色按钮 */
+.g-btn-aid{border-color:#e2e2e2;background-color:#f4f4f4;}
+.g-btn-aid span,.g-btn-aid button,.g-btn-aid input{background-color:#f4f4f4;color:#333;}
+.g-btn-aid:hover{border-color:#aeaeae;}
+.g-btn-aid:hover span,.g-btn-aid:hover button,.g-btn-aid:hover input{color:#333;}
+

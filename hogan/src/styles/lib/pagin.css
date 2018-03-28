@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*
+** Css page
+** Version: 3.0.0
+** Author Joy Du(飘零雾雨)
+** Edit at 2012.3.1
+*/
+
+.g-pagin{padding:10px;text-align:right;font-family:simsun;}
+.g-pagin ul{display:inline-block;*display:inline;*zoom:1;overflow:hidden;}
+.g-pagin li{float:left;}
+.g-pagin li a,.g-pagin li strong{display:block;padding:0 5px;line-height:18px;vertical-align:top;}
+.g-pagin li strong{background-color:#0069ca;color:#fff;}

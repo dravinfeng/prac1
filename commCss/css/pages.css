@@ -1,0 +1,12 @@
+.dx_pages{text-align:center;}
+.dx_pages .pager{font:12px tahoma;padding:20px;text-align:center;}
+.dx_pages .pager a{background:url(../img/pager_bg.png) repeat-x scroll 0 100% transparent;border:1px solid #DFDFDF;color:#555;text-decoration:none;}
+.dx_pages .pager a,.dx_pages .pager span{color:#555;display:inline-block;font:12px/18px tahoma;margin:0 2px 0 3px;outline:medium none;padding:0 6px;text-align:center;vertical-align:middle;}
+.dx_pages .pager a:hover{border:1px solid #0E72D1;color:#0F68C2;}
+.dx_pages .pager .current{border:1px solid #FF8400;color:#FF8400;font-weight:700;}
+.dx_pages .pager .prev,.dx_pages .pager .next{border-color:#DFDFDF;color:#555;font-weight:normal;height:18px;padding:0;text-align:left;width:58px;}
+.dx_pages .pager .prev{background:url(../img/zx_page.png) no-repeat scroll 0 0 transparent;text-indent:15px;}
+.dx_pages .pager .next{background:url(../img/zx_page.png) no-repeat scroll 0 -18px transparent;text-indent:7px;}
+.dx_pages .pager span.prev{background:url(../img/zx_page.png) no-repeat scroll 0 -36px transparent;text-indent:15px;}
+.dx_pages .pager span.next{background:url(url(../img/zx_page.png) no-repeat scroll 0 -54px transparent;text-indent:7px;}
+.dx_pages .pager span.current.prev,.dx_pages .pager span.current.next{border-color:#ECECEC;color:#AAA;font-size:12px;font-weight:400;padding:0;width:58px;}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>例子</title>
+  <script type="text/javascript" src="//static0.qianqian.com/pc-mall/prd/scripts/page/jquery-1.7.2.js"></script>
+</head>
+
+<body>
+	<textarea id="aa"></textarea>
+<script type="text/javascript">
+var so=new WebSocket('ws://localhost:3333');
+so.onopen=function(evt){
+	so.send(' start listening');
+	so.onmessage=function(evt){
+		console.log('received message',evt);
+		console.log(evt.data);
+	}
+	so.onclose=function(evt){
+		conso.log('closed',evt);
+	}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+
+
+.fix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.fix{*zoom:1;}
+/*面包屑*/
+.pos{ margin-bottom:10px; padding:5px 10px 10px; border-bottom:1px solid #ddd; font-family:simsun; }
+.help_nav{width:140px;float:left;}
+.help_nav ul{}
+.help_nav ul li{position:relative;}
+.help_nav li a {padding-left:10px;display:block;height:25px;line-height:25px;overflow:hidden;outline:none;}
+.help_nav li a:hover{color:#fff;background:#039bb2;}
+.help_nav ul ul {border:0px;margin:0px 0px 6px 0px;}
+.help_nav ul ul li {border:0px;margin-left:15px;background:url(http://source.qunar.com/site/images/new_main/zyf/dot.gif) no-repeat 0px center;}
+.help_nav ul .active a{color:#fff;background:#039bb2;cursor:default;}
+.help_right {margin-left:145px;padding:10px;font:normal 12px tahoma,SimSun,Verdana,Arial,Helvetica,sans-serif;color:#555;border-left:#dfdedb 1px solid;}
+.help_right h2 {padding:0 0 10px 14px;color:#004d95;line-height:18px;height:18px;overflow:hidden;border-bottom:1px dotted #d5dbdc;font-size:14px;font-weight:700;background:url(http://source.qunar.com/train/images/help_titlebg.png) no-repeat 0px 2px; }
+.help_right h5,.help_right h3{font:bold 14px/25px Tahoma,simsun,Arial;}
+.help_right .ct {padding:10px 0px 0 10px;}
+.help_right .article {padding:10px 0px 0px 10px;font-family:'微软雅黑';line-height:22px;}
+.help_right .article h1{font-size:16px;text-align:center;}
+.help_right .article .texright{text-align:right;padding:10px 0px;}
+.help_right .article  p{text-indent:24px;margin-bottom:15px;}
+.help_right .article  .center2{text-align:center;text-indent:0px;}
+.help_right .codelist li{line-height:25px;}
+.help_right .codelist ul {margin-bottom:10px;}
+.help_right .codelist ul li{padding-left:16px;}
+.help_right .faq{line-height:18px;}
+.help_right .faq dt{margin:20px 0px 4px 0px;font-weight:700;}
+.help_right .faq dd em{float:left;width:25px;}
+.help_right .faq dd p{margin-left:25px;}
+.help_right .process{margin:10px 0px 16px 0px;}
+.help_right  .hot_tag{height:1%;overflow:hidden;zoom:1;padding:10px 0px 0px 0px;}
+.help_right  .hot_tag span{width:85px;float:left;line-height:24px;}
+.help_right  .hot_tag .help_taglist{margin-left:90px;}
+.help_right  .hot_tag .help_taglist li{float:left;margin-right:20px;line-height:24px;white-space:nowrap;}
+.help_right  .contact_us dl{line-height:18px;}
+.help_right  .contact_us dl dt{font-weight:800;margin:11px 0px;}
+.help_right  .contact_us dl dd cite{font-style:normal;padding-left:14px;}
+.help_right h3{margin:10px 0px;}
+.help_right p.cancle24{text-indent:0px;}
+.help_right .bl_ml24{display:block;margin-left:25px;}
+.help_right .bl_ml20{display:block;margin-left:20px;}
+
+.help_right .proce_ct {padding:10px 0px 0px 10px;line-height:22px;}
+.help_right .proce_ct  p{margin-bottom:10px;}
+.help_right .proce_ct h5{margin-bottom:5px;}
+.help_right .mr7{margin-right:7px;}
+
+.numberlist{padding-left:52px;}
+.numberlist li{line-height:24px;list-style:decimal;list-style-position:outside;}
+.noticenumb{padding:10px 0px 20px 25px;}
+.noticenumb li{line-height:24px;list-style:decimal;list-style-position:outside;}
+.noticenumb li b{font-weight:700;}
+
+.help_right .note{color:#888;padding:30px 0px;}
+
+.process_step{height:1%;overflow:hidden;zoom:1;margin:20px 0px 5px 0px;}
+.process_step li,.process_step li.fivestep,.process_step li .one,.process_step li .two,.process_step li .three,.process_step li .fourstep{background:url(http://source.qunar.com/train/images/proces.png) no-repeat 0px 0px;}
+.process_step li{float:left;width:143px;height:56px;font-size:14px;margin-right:16px;overflow:hidden;background-position:0px -160px;}
+.process_step li b{font-weight:100;text-align:center;width:100px;float:right;margin-right:2px;display:inline;height:56px;line-height:56px;}
+.process_step li.fivestep{width:136px;height:56px;overflow:hidden;margin-right:0px;background-position:0px -248px;}
+.process_step li.fivestep b{font-weight:100;text-align:center;width:90px;float:right;display:inline;height:56px;line-height:56px;}
+.process_step li .one,.process_step li .two,.process_step li .three,.process_step li .fourstep{float:left;margin:10px 0px 0px 15px;display:inline;text-indent:-99999em;}
+.process_step li .one{width:14px;height:34px;background-position:0px -335px;}
+.process_step li .two{width:23px;height:34px;background-position:0px -387px;}
+.process_step li b.b1{padding:10px 0px;height:26px;line-height:18px;}
+.process_step li b.b1 em{font-size:12px;}
+.process_step li .three{width:22px;height:34px;background-position:0px -446px;}
+.process_step li .fourstep{width:22px;height:34px;background-position:0px -507px;}
+/*火车票预售期*/
+.help_right .article h3{font-size:12px;font-weight:700;}
+.help_right .article h3 span{float:right;font-weight:100;}
+.tickets_adva{padding:8px 0px 4px 0px;height:100%;overflow:hidden;}
+.tickets_adva li {float:left;width:100%;height:100%;overflow:hidden;padding:5px 0px;line-height:21px;}
+.tickets_adva .ticket_col1{float:left;width:8%;font-weight:bold;color:#666;}
+.tickets_adva .ticket_col2{float:left;width:89%;line-height:21px;}
+.tickets_adva .ticket_col2 a{margin-right:10px;white-space : nowrap;float: left;}

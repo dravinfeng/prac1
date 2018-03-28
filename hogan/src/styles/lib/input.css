@@ -1,0 +1,23 @@
+@charset "utf-8";
+@charset "utf-8";
+/*
+** Css input
+** Version: 3.0.0
+** Author Joy Du(飘零雾雨)
+** Edit at 2012.3.1
+*/
+
+/* comm: g-text-entry */
+.g-text-entry{overflow:auto;height:19px;padding:1px 6px 0;border:1px solid #bbb;background-color:#fff;}
+
+/** textarea **/
+.g-textarea{ display:block; border:solid 1px #ccc; padding: 1px 0 0 6px ; }
+.g-textarea textarea{ width:100%; background:#fff; border:0 none; resize:none; outline:none;height:68px; line-height:24px; }
+    /*disabled*/
+.g-disabled textarea,
+.g-disabled input { background:#fbfbfb; }
+
+/** input:text **/
+.g-input-text{ border:solid 1px #ccc; height:20px; line-height:20px; padding:4px 5px; outline:none;vertical-align: middle; }
+.g-ipt{ width:13px; height:13px; padding:0; margin: -1px 6px 0px 0px; margin-top:-3px\0; *margin-top:0px; vertical-align: middle; }
+

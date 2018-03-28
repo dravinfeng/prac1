@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../commCss/css/smoothness/jquery-ui-1.10.1-srclist.css" rel="stylesheet"></link>
+<link href="../commCss/css/reset.css" rel="stylesheet"></link>
+<script src="../commCss/js/jquery-srclist.js" type="text/javascript"></script>
+<script src="../commCss/js/jquery-ui-1.10.1-srclist.js" type="text/javascript"></script>
+<title>图片onload</title>
+<script>
+	var sta=0;
+	
+	reload=function(){
+		var src1="http://mp3.zhuqu.com/static/images/water/9e/9ed83688bcb6953f3951ab0c5f76f64f.jpg";
+		var src2="http://mp1.zhuqu.com/static/images/water/39/399eea8f2a6abf8c3136bb1af2e61ec1.jpg";
+
+		if($('#img')[0].src==src1){
+			$('#img')[0].src=src2;			
+		}else{
+			$('#img')[0].src=src1;
+		}
+		
+	}
+	load=function(_self){
+		console.log(123);
+		if(sta<4){
+			reload();
+		}
+		sta++;
+	}
+</script>
+</head>
+<img id="img" onload="load(this)" src="http://mp3.zhuqu.com/static/images/water/9e/9ed83688bcb6953f3951ab0c5f76f64f.jpg">
+<input type="button" value="reload" onclick="reload()" />
+<body>
+
+</body>
+</html>

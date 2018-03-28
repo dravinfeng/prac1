@@ -1,0 +1,14 @@
+/** 
+* @description: 支付页面导航-新版-单程--之后联程可以合并统一调用此css
+* @author: assassin.liu  
+* @update: 14-3-3-上午11:16
+*/
+.g-nav{ margin-bottom:10px; }
+.g-nav,
+.nav-bd .cust{ height:30px; line-height:30px; background:url(http://source.qunar.com/train_tts/ico02.png) left -114px; background-repeat:repeat-x; }
+.nav-bd{ width:950px; margin:auto; }
+.nav-bd i{ font-style:normal; }
+.nav-bd .nav-info{ float:right; }
+.nav-bd .nav-info .split{ padding:0 10px; }
+.nav-bd .nav-info a{ color:#333; }
+.nav-bd .cust{ display:inline-block; padding-left:39px; background-position:-200px -153px; background-repeat:no-repeat; }

@@ -1,0 +1,15 @@
+/** 
+* @description: 当前位置--步骤
+* @author: assassin.liu  
+* @update: 14-3-3-下午1:29
+*/
+.g-step{ height:34px; line-height:34px; overflow:hidden; }
+    /* 当前位置 */
+.g-step .step-info{ float:right; font-size:0px; font-family:"Microsoft YaHei"; font-weight:700; _margin-top:8px; }
+.g-step .step-info span{ font-size:16px; }
+.g-step .step-info .g-ico02{ margin:0 10px; }
+.g-step .step-info .on{ color:#009cb3 }
+.g-step .step-info .on .g-ico-arrowr{ background-position:-15px -54px; }
+    /* 城市 */
+.g-step .title-city h3 { color: #d9014a; font-weight: 700; font-size: 14px; display: inline; zoom:1; padding-right:10px; }
+.g-step .title-city .connect{ padding:0 10px; }

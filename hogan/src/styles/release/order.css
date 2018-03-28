@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*
+** 订单支付页面
+** Author Baoguo.wang(iLeojie)
+** Edit at 2014.09.18
+*/
+@import url("../lib/reset.css");
+@import url("../lib/g-btn.css");
+@import url(../lib/dialog.css); /*对话框样式*/
+@import url("../module/m-header.css"); 
+@import url("../module/m-dialog.css"); 
+@import url("../module/m-step.css"); 
+@import url("../module/m-order.css"); 

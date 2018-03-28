@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>canvas</title>
+		<style>
+			body{
+				margin:0;	
+			}
+			.cav{
+				width:80%;
+				height:80%;
+				margin:50px;
+				background-image:url("http://source.qunar.com/mobile_platform/douxingWeb/slider_01.jpg");
+			}
+
+		</style>
+		<script src="http://qunarzz.com/mobile_core/prd//core/jquery-2012110214481402.js"></script>
+		<script>
+			var $E=function(id){
+				return typeof id=='string'? document.getElementById(id):id;
+			}
+			var hdl,nd;
+			var C={
+				fillRect:function(){
+					
+					hdl.fillRect(0,0,100,100);
+					hdl.fill();
+
+				},
+				strokeRect:function(){
+					hdl.lineWidth=1;
+					hdl.strokeRect(101,101,100,100);
+				},
+				drawImage:function(){
+					var url="http://source.qunar.com/mobile_platform/douxingWeb/slider_01.jpg";
+					var img=new Image();
+					img.onload=function(){
+						hdl.drawImage(img,200,200,100,100);
+					}
+					img.src=url;
+				},
+				init:function(){
+					nd=$E('cav');
+					hdl=nd.getContext('2d');
+					hdl.fillStyle="white";
+				},
+				checkLeftButton:function(e){
+					if($.browser.msie){
+						return e.button==1;
+					}else if($.browser.mozilla){
+						return e.button==0;
+					}
+				},
+				draw:function(){
+					
+				}
+			}
+			var func={
+				down:function(e){
+					if(!C.checkLeftButton(e)){
+						return;
+					};
+					console.log(e);
+				},
+				move:function(e){
+					if(!C.checkLeftButton(e)){
+						return;
+					};
+				},
+				up:function(e){
+					if(!C.checkLeftButton(e)){
+						return;
+					};
+					
+				}
+			}
+			window.onload=function(){
+				C.init();
+//				C.fillRect();
+//				C.strokeRect();
+//				C.drawImage();
+				$(nd).bind('mousedown',func['down']);
+				$(nd).bind('mousemove',func['move']);
+				$(nd).bind('mouseup',func['up']);
+			}
+		</script>
+		<script>
+//			var doIt=function(urls){
+//	//方案不够好
+//	location.href=urls[0];
+//	var i=0;
+//	setTimeout(function(){
+//		urls[i] && (location.href=urls[i]);
+//	},50);
+//}
+
+
+var p;
+var sta=0;
+var doIt=function(urls){
+	if(sta){return};
+	sta=1;
+	var frm=document.createElement('frameset');
+	!p&& (p=document.createElement('div'));
+	p.style.display="none";
+	p.innerHTML="";
+	p.appendChild(frm);
+	document.body.appendChild(p);
+	var d;
+	for(var i=0;i<urls.length;i++){
+		d=document.createElement('frame');
+		frm.appendChild(d);
+		d.src=urls[i];
+	
+	}
+	setTimeout(function(){
+		p.parentNode.removeChild(p);
+		sta=0;
+		p=null;
+	},1000);
+	
+}
+
+var ddd=function(){
+
+	doIt(["http://client.dx.qunar.com//download/douxing.do?v=1.0&src=web&pos=index","http://client.dx.qunar.com//download/douxing.do?v=1.0&src=web&pos=index","http://client.dx.qunar.com/app/getapk?url=ead5ba1f85188ca376523cdc6385f91c.apk&app=1152&www=1&key=%e5%8f%91%e7%8e%b0&pos=recommend&id=&name=%e8%80%81%e8%99%8e%e5%9c%b0%e5%9b%be"]);
+}
+		</script>
+	</head>
+	<body>
+		<canvas class="cav" id="cav"></canvas>
+		<input type="button" onclick="ddd()" value="下载多个" />
+
+		<form action="http://192.168.31.50:8080/dxclient/upload" target="aa">
+
+			
+			<input type="submit" value="aa"/>
+		</form>
+		<iframe id="aa" name="aa" style="display:none;"></iframe>
+	</body>
+</html>

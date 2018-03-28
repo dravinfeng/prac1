@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+	
+
+</style>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+	<script>
+	a=new Date().getTime();
+	aa=function(){
+		console.log(new Date().getTime()-a)
+alert(new Date().getTime()-a);		
+	}
+</script>
+<!-- 	<img id="img" onload="aa(event)" src="http://mp1.dev.com/static/images/water/3b/3bcd74f501b6fcfddf0dfb551cb43094.jpg" style="visibility: hidden;"> -->
+<script>
+a=new Image();
+b="";
+a.onload=function(){
+	// console.timeEnd("a");	alert(new Date().getTime()-b);
+}
+b=new Date().getTime();
+// console.time("a");
+a.src="http://mp1.dev.com/static/images/water/3b/3bcd74f501b6fcfddf0dfb551cb43094.jpg";
+
+// console.log([$("#img").height(),$("#img").width()]);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>例子</title>
+  <script type="text/javascript" src="http://127.0.0.1:8020/mzaocan/js/common/zepto.js"></script>
+</head>
+
+<body>
+	<select>
+	  <optgroup label="Swedish Cars">
+	    <option value="volvo">Volvo</option>
+	    <option value="saab">Saab</option>
+	  </optgroup>	
+	</select>
+<script type="text/javascript">
+$.ajaxSettings = $.extend($.ajaxSettings, {
+		type : 'POST',
+		dataType : 'json',
+		cache : false,
+		timeout : 15 * 1000,
+		xhrFields : {
+			withCredentials : true
+		},
+		error : function(jqXHR, status, error) {
+			var info="status:"+(status||'')+'; error:';
+			error && (info+=error);
+			alert(info);
+			return;
+		}
+	});
+	
+// $.ajaxSetup({
+  // type: 'POST',
+  // dataType: 'json',
+  // cache: false,
+  // timeout: 10 * 1000,
+  // xhrFields: { withCredentials: true },
+  // error: function(jqXHR, status, error){
+    // return;
+  // }
+// });
+
+var defer = $.ajax({
+  url: 'http://core.8523.zaocanjia.com/m/login/',
+  data: {mobile: '15210814173', password: '123'},
+  complete:function(){
+  	console.log(arguments);
+  }
+});
+// defer.complete=function(response){
+  // console.log(response);
+// };
+// defer.done(function(response){
+  // if(response.code != 0){return}
+  // $.ajax({
+    // url: 'http://core.8523.zaocanjia.com/m/account/list',
+    // success: function(response){
+      // console.log(response);
+    // }
+  // });
+// });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*
+** 订单支付页面
+** Author Baoguo.wang(iLeojie)
+** Edit at 2014.09.17
+*/
+@import url(../lib/reset.css); /* 重置 */
+@import url(../lib/ico.css); /* ico */
+@import url(../lib/g-layout.css); /* 导航布局 */
+@import url(../lib/fragment/g-nav.css); /* 顶部导航 */
+@import url(../lib/fragment/g-step.css); /* 当前位置 */
+@import url(../lib/fragment/g-table.css); /* 模拟表格 */
+@import url(../admin/common/q_inpbox.css);
+@import url(../lib/yselector.css); /*  */
+@import url(../lib/input.css); /*  */
+@import url(../lib/btn.css); /*  */
+@import url(../lib/tips.css); /*  */
+@import url(../lib/dialog.css); /*  */
+@import url(../module/m-head.css); /* 头部 */
+@import url(../module/m-traininfo.css); /* 车次信息模块 */
+@import url(../module/m-msg.css); /* 个人信息模块 */
+@import url(../module/m-addalldls.css);  /** 新增查看全部代理商模块 By@baoguo.wang20140825**/
+@import url(../lib/g-footer.css); /*  */
+@import url(../lib/g-btn.css); 
+@import url(../module/m-dialog.css); 

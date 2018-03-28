@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>fileReader</title>
+	<script src="http://q.qunarzz.com/jquery/prd/jquery-1.7.2.js"></script>
+	</head>
+	<body>
+	<input type="file" name="file" onchange="show(this)"/>
+	
+	
+	<img src=""  id="img">
+	
+	
+
+<script>
+	
+
+	function show(el){
+		var file=el.files[0];
+		var cvs=$('<canvas></canvas>').appendTo(document.body)[0];
+		var ct=cvs.getContext('2d');
+		var img=new Image();
+		
+		
+		if(!window.FileReader){
+			alert('浏览器不支持，请用 chrome firefox等高版本浏览器');
+			return;
+		}
+		var fr=new FileReader();
+		fr.onloadend=function(e){
+			
+			img.src=e.target.result;
+			cvs.width=img.width,cvs.height=100;
+			//ct.drawImage(img);
+			ct.drawImage(img,0,0,img.width,100,0,0,img.width,100);
+			console.log(cvs.toDataURL('image/jpeg', 1));
+			//$('#img')[0].src=e.target.result;
+		}
+		
+		
+		
+		
+		
+		fr.readAsDataURL(file);
+	}
+	
+</script>
+
+	</body>
+</html>

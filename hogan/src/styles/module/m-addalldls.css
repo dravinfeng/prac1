@@ -1,0 +1,8 @@
+@charset "utf-8";
+/**
+* module: m-addalldls
+* Author: baoguo.wang@qunar.com
+* Time: 2014.8.25
+*/
+.m-head .fright,.banner .fright{float: right !important;}
+.all-dls{width: 108px; float: left; margin: 55px 0 0 15px; font:12px/1.5 tahoma,arial,sans-serif;}

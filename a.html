@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 
+    <title>input 样式</title>
+    <style>
+    	.input{
+    		width:200px;
+    		height:50px;
+    		background:#000099;
+    		line-height: 50px;
+    		color:#FFFFFF;
+    		border:0 none;
+    		text-align:center;
+    	}
+    </style>
+    
+	
+</head>
+<body>
+<input class="input" type="button" value="aaa" />
+
+<br ><br ><br ><br >
+<div class="input">aaa</div>
+<script>
+var getRandomAZ=function(num,sta){
+    var ls=[],key;
+    var base = !sta ? 97:65;
+    var len = sta==2 ? 52:26;
+    for(var i=0;i<num;i++){
+    	key=base+parseInt(Math.random()*len,10);
+    	if(key>90 && key<97){
+    		key=97;
+    	}
+        ls.push(String.fromCharCode(key));
+    }
+   
+    return ls;
+}
+//alert(navigator.userAgent)
+
+// $(window).bind('unload',function(){
+	// console.log('123412')
+// })
+console.time('a')
+getRandomAZ(35,0)
+//console.log(getRandomAZ(35,0))
+ console.timeEnd('a')
+//alert(getRandomAZ(15,0))
+
+abc=function(){
+	// var a=window.getSelection();
+	// console.log(a.focusNode);
+	// console.log(a.anchorNode);
+	console.log(document.activeElement)
+	//console.log(a.tagName)
+}
+</script>
+<input type="text" onclick="abc()" />
+
+<script>
+	var storage=(function(){
+	var objDS = window.localStorage;
+	if (objDS) {
+		alert('good')
+		return {
+			get: function(key){
+				var vl=unescape(objDS.getItem(key));
+				if(vl=='null'){
+					return '';
+				}
+				return vl;
+			},
+			set: function(key, value, exp){
+				objDS.setItem(key, escape(value));
+			},
+			del: function(key){
+				objDS.removeItem(key);
+			},
+			clear: function(){
+				objDS.clear();
+			},
+			getAll: function(){
+				var l = objDS.length, key = null, ac = [];
+				for (var i = 0; i < l; i++) {
+					key = objDS.key(i), ac.push(key + '=' + this.getKey(key));
+				}
+				return ac.join('; ');
+			}
+		};
+	}
+	else 
+		if (window.ActiveXObject) {
+			alert('normal')
+			store = document.documentElement;
+			STORE_NAME = 'localstorage';
+			try {
+				store.addBehavior('#default#userdata');
+				store.save('localstorage');
+			} 
+			catch (e) {
+			}
+			
+			return {
+				set: function(key, value){
+					store.setAttribute(key, value);
+					store.save(STORE_NAME);
+				},
+				get: function(key){
+					store.load(STORE_NAME);
+					return store.getAttribute(key);
+				},
+				del: function(key){
+					store.removeAttribute(key);
+					store.save(STORE_NAME);
+				}
+			};
+		}
+		else {
+			alert(44444444)
+			return {
+				get: function(key){
+					var aCookie = document.cookie.split("; "), l = aCookie.length, aCrumb = [];
+					for (var i = 0; i < l; i++) {
+						aCrumb = aCookie[i].split("=");
+						if (key === aCrumb[0]) {
+							return unescape(aCrumb[1]);
+						}
+					}
+					return null;
+				},
+				set: function(key, value, exp){
+					if (!(exp && typeof exp === date)) {
+						exp = new Date(), exp.setDate(exp.getDate() + 1);
+					}
+					document.cookie = key + "=" + escape(value) + "; expires=" + exp.toGMTString();
+				},
+				del: function(key){
+					document.cookie = key + "=''; expires=Fri, 31 Dec 1999 23:59:59 GMT;";
+				},
+				clear: function(){
+					var aCookie = document.cookie.split("; "), l = aCookie.length, aCrumb = [];
+					for (var i = 0; i < l; i++) {
+						aCrumb = aCookie[i].split("=");
+						this.deleteKey(aCrumb[0]);
+					}
+				},
+				getAll: function(){
+					return unescape(document.cookie.toString());
+				}
+			};
+		}
+})();
+
+setVal=function(){
+	storage.set('aaa',document.getElementById('abc').value);
+}
+getVal=function(self){
+	alert(storage.get('aaa'));
+}
+</script>
+<br>
+<input id="abc"  type="text" /><input type="button" value="setValue" onclick="setVal()" />
+<input type="button" value="getValue" onclick="getVal(this)" />
+
+</body>
+</html>

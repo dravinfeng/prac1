@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>testJq</title>
+		<script>
+		var s;
+		var flag=location.search;
+		var loaded=function(){
+			var el=document.createElement('div');
+			
+			document.body.appendChild(el);
+			el.innerHTML=new Date().getTime()-s;
+		}
+		var load=function(sta){
+			
+			var r=Math.random();
+			var head=['<link href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css?',r,'" type="text/css" rel="stylesheet"></link>',
+			'<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js?',r,'"><\/script>'			
+			].join('');
+			
+			var body=['<img src="http://client.dx.qunar.com/app/getimg?pos=index&width=1024&www=1&url=c6245f8ee16578530196379d61420dde.jpg&r=',r,'">'].join('');
+			s=new Date().getTime();
+			if(sta){
+				//document.documentElement.childNodes[0].innerHTML=(head);
+				document.write(head+body);
+			}else{
+				document.write(body);
+			}
+			
+		}
+			load(flag);
+		</script>
+		
+	</head>
+	<body onload="loaded()">
+
+	</body>
+</html>

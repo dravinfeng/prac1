@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta content="telephone=no" name="format-detection" />
+	<!-- UC默认竖屏 ，UC强制全屏 -->
+	<meta name="full-screen" content="yes"/>
+	<meta name="browsermode" content="application"/>
+	<!-- QQ强制竖屏 QQ强制全屏 -->
+	<meta name="x5-orientation" content="portrait"/>
+	<meta name="x5-fullscreen" content="true"/>
+	<meta name="x5-page-mode" content="app"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no,minimal-ui" /> 
+<!--     <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5,user-scalable=no,minimal-ui" /> -->
+<!--     <meta name="viewport" content="width=device-width, initial-scale=2.0, maximum-scale=2.0,user-scalable=no,minimal-ui" /> -->
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no ,target-densitydpi=401,minimal-ui" />  -->
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no ,target-densitydpi=medium-dpi,minimal-ui" />  -->
+    
+    <script>
+    
+    	alert('documentElement宽度：'+document.documentElement.offsetWidth);
+		alert('screen width:'+screen.width)
+</script>
+    <title>demo</title>
+    <style>
+    	html,body{
+    		padding:0;
+    		margin:0;
+    	}
+    	body{
+    		min-width:320px;
+    		max-width:540px;
+    		margin:0 auto;
+    		font-size:16px;
+    	}
+    	.head{
+    		height:50px;
+    		width:100%;
+    		background:green;
+    		margin:0 auto;
+/*    		font-size:32px;*/
+    	}
+    	img{
+    		display:block;
+    		width:320px;
+    		margin:0 auto;
+    	}
+    </style>
+</head>
+<body>
+	
+<div class="head">仔细瞧这段文案，这里在不同的scale情况下是有变化的,且 target-densitydpi范围70~400之间</div>
+<img src="./zz.jpg">
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 
+    <title>富文本编辑</title>
+    <style>
+    	#aa{
+    		width:500px;
+    		height:300px;
+    	}
+    </style>
+    
+	<script type="text/javascript" src="//fe.saohuobang.com/base/zepto-1.1.6.js"></script>
+</head>
+<body>
+<ul>
+	<li>B</li>
+	<li>I</li>
+	<li>Color</li>
+</ul>
+
+<script>
+var ifm=$('<iframe id="aa"></iframe>').appendTo(document.body)[0];
+
+$(document.body).delegate('li','click',function(e){
+	var text=$(this).text();
+	switch(text){
+	case "B":
+		ifm.contentDocument.execCommand("Bold");
+		break;
+	case "I":
+		ifm.contentDocument.execCommand("Italic");
+		break;
+	case "Color":
+		ifm.contentDocument.execCommand("Bold","false",null);
+		break;
+	}
+});
+
+window.onload=function(){
+	ifm.contentDocument.designMode="on";
+}
+</script>
+</body>
+</html>

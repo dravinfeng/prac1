@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>onchange</title>
+  
+</head>
+
+<body>
+	
+	<pre id="aa">aaaaaaaaaaaaaaaaaa</pre>
+	<input type="text" id="bb" value="bb"/>
+	<a href="javascript:aa()">修改aa</a>
+	<a href="javascript:bb()">修改bb</a>
+<script type="text/javascript">
+var handler=function(e){
+	var el=e.target||e.srcElement;
+	console.log(el);
+}
+
+var aa=function(){
+	document.getElementById('aa').innerHTML="cc";
+}
+
+var bb=function(){
+	document.getElementById('bb').value="dd";
+}
+
+if(document.addEventListener){
+	document.addEventListener('DOMAttrModified',handler,false);
+	document.addEventListener('DOMNodeInserted',handler,false);
+	document.addEventListener('DOMNodeRemoved',handler,false);
+	
+	
+}else{
+	document.attachEvent('onpropertychange',handler);
+}
+</script>
+</body>
+</html>

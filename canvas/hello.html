@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>canvas</title>
+	<script src="http://q.qunarzz.com/jquery/prd/jquery-1.7.2.js"></script>
+	</head>
+	<body>
+<canvas id="cvs" style="width:200px;height:200px"></canvas>
+
+<script>
+	var cvs=$('#cvs')[0];
+	var content=cvs.getContext('2d');
+	content.fillStyle="#f0f0f0";
+	content.fillRect(0,0,200,200);
+	
+	content.fillStyle="#666666";
+	content.font="16px 微软雅黑 ";
+	content.textBaseline="top";
+	content.fillText("hello world",50,50);
+	
+	var img=new Image();
+	img.onload=function(){
+		content.drawImage(img,50,80);
+	}
+	img.src="http://192.168.217.37:802/aa.jpg";
+	
+	content.strokeStyle="#000000";
+	content.strokeRect(5,5,90,90)
+	
+	console.log(cvs.toDataURL('image/jpeg', +1))
+	
+</script>
+
+	</body>
+</html>

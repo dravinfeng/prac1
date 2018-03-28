@@ -1,0 +1,41 @@
+/* fix music style */
+.music-body,
+.topic-top {
+	width: 100%;
+}
+.topic-left, .topic-right {
+	display: none;
+}
+
+/* hide unwanted doms in outline mode */
+html.tdt-outline .music-head,
+html.tdt-outline .nav,
+html.tdt-outline #userbar,
+html.tdt-outline .music-foot,
+html.tdt-outline .app-down-panel,
+html.tdt-outline .slc {
+	display: none !important;
+}
+#tdt-doc {
+  position: relative;
+  width: 100%;
+}
+.tdt-bg-img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background: no-repeat center 0;
+}
+#tdt-body {
+  position: relative;
+  width: 980px;
+  height: 100%;
+  margin: auto;
+  min-height: 1000px;
+}
+.tdt-cbody {
+  position: absolute;
+}
+.tdt-container {
+  position: relative;
+}

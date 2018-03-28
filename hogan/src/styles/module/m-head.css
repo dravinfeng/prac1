@@ -1,0 +1,10 @@
+/** 
+* @description: 新版-头部-单程--之后联程可以合并统一调用此css
+* @author: assassin.liu  
+* @update: 14-3-3-下午12:13
+*/
+
+.m-head{ height:70px; overflow:hidden; zoom:1; padding-bottom:10px; border-bottom:solid 2px #1fbad1; vertical-align:middle; }
+.m-head .msg{ float:right; height:70px; vertical-align:middle; margin-top:19px; }
+.m-head .logo{ float:left; height:70px; overflow: hidden; }
+.m-head .letter{ float: left; width: 167px; margin-top:10px; height: 55px; background: url(http://source.qunar.com/train_tts/icon_dbt.gif) no-repeat left top;text-indent: -99999em; }

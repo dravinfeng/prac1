@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>canvas</title>
+		<style>
+			body{
+				margin:0;	
+			}
+		</style>
+		<script>
+			var A=function(){
+				//console.log(this);
+				this.color='111';
+				this.hoho=function(){
+					console.log(this.color);
+				}
+			}
+			var a=new A();
+			var B=function(){}
+			B.prototype=new A()
+			//...
+			function C(){return this}
+			C.prototype.a=function(){
+				console.log(this.b);
+			}
+			C.prototype.b='111';
+			new C().a();
+
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

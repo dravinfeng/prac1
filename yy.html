@@ -1,0 +1,253 @@
+<html>
+<head>
+    <title>独立站音乐人 - 百度音乐人</title>
+    <script>
+    void
+
+    function(g, f, j, c, h, d, b) {
+        g.alogObjectName = h, g[h] = g[h] || function() {
+            (g[h].q = g[h].q || []).push(arguments)
+        }, g[h].l = g[h].l || +new Date, d = f.createElement(j), d.async = !0, d.src = c, b = f.getElementsByTagName(j)[0], b.parentNode.insertBefore(d, b)
+    }(window, document, 'script', 'http://img.baidu.com/hunter/alog/alog.min.js', 'alog');
+    void
+
+    function() {
+        function c() {
+            return;
+        }
+        window.PDC = {
+            mark: function(a, b) {
+                alog('speed.set', a, b || +new Date);
+                alog.fire && alog.fire('mark');
+            },
+            init: function(a) {
+                alog('speed.set', 'options', a);
+            },
+            view_start: c,
+            tti: c,
+            page_ready: c
+        }
+    }();
+    void
+
+    function(n) {
+        var o = !1;
+        n.onerror = function(n, e, t, c) {
+            var i = !0;
+            return !e && /^script error/i.test(n) && (o ? i = !1 : o = !0), i && alog("exception.send", "exception", {
+                msg: n,
+                js: e,
+                ln: t,
+                col: c
+            }), !1
+        }, alog("exception.on", "catch", function(n) {
+            alog("exception.send", "exception", {
+                msg: n.msg,
+                js: n.path,
+                ln: n.ln,
+                method: n.method,
+                flag: "catch"
+            })
+        })
+    }(window);
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="百度音乐人, 原创音乐, 独立音乐, 音乐人, 音乐社区, 百度音乐">
+    <meta name="description" content="百度音乐人社区是由百度音乐打造的原创音乐平台，致力于为独立音乐人提供发布原创音乐，与乐迷分享交流的音乐社区。">
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <!--STATUS OK-->
+    <script type="text/javascript">
+    (function(l) {
+        var h = l.hash;
+        h && h.length > 2 && h.substr(0, 3) == '#!/' && (l.href = l.protocol + '//' + l.host + '/' + h.substr(3))
+    })(location)
+    </script>
+    <script type="text/javascript" src="//mu3.bdstatic.com/static/j/OJOGkcPg.js"></script>
+    <script type="text/javascript">
+    MiniPipe("__ipipe__", "__session__", ",", "__noscript__");
+    </script>
+    <link rel="stylesheet" type="text/css" href="//y.baidu.com/static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="//mu3.bdstatic.com/static/c/1Wl1Fgma.css">
+    <link rel="stylesheet" type="text/css" href="//mu4.bdstatic.com/static/c/uQdOa4zN.css">
+    <script type="text/javascript" src="//mu4.bdstatic.com/static/j/810ulxAR.js"></script>
+    <style></style>
+    <!--[if lt IE 7]><link rel="stylesheet" href="/static/css/core/fixed-ie6.css"><script>try { document.execCommand('BackgroundImageCache', false, true); } catch (e) {};</script><![endif]-->
+    <!--[if lt IE 9]><script src="/static/js/lib/html5shiv.js"></script><![endif]-->
+    <script>
+    var lowBrowser = false;
+    </script>
+    <!--[if lte IE 8]><script>var lowBrowser = true;</script><![endif]-->
+    <script>
+    alog('speed.set', 'ht', +new Date);
+    </script>
+    <style type="text/css">
+    header .search .search-input-wrap .search-input {
+        height: 38px;
+    }
+    
+    .sns-content,
+    .main-body {
+        width: auto;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="pageWrapper">
+    </div>
+    <div id="mtms">ggggggggggggg</div>
+    <div id="footerBox">
+    	<div id="footerBox">
+	    
+    
+            <footer class="y-footer" id="footer">   <hgroup>       <a class="foot-logo" href="/"></a>        <nav class="nav">            <a href="/blog/1387253721">常见问题</a>          <a href="/artist/register">申请成为音乐人</a>            <a class="go-music" href="http://music.baidu.com" target="_blank">回到百度音乐</a>           <a href="javascript:" id="fqFeedback">问题反馈</a>        </nav>        <p class="connect-text">联系邮箱：th_musicianhelp@taihe.com</p>       <section class="about">&copy;Baidu<a href="http://www.baidu.com/duty/" target="_blank">使用百度前必读</a>文网文[2010]197号</section>       <section class="connect">            <a href="http://e.weibo.com/baidumusician" target="_blank" class="weibo">加关注</a>           <a title="" data-original-title="" href="javascript:;" class="weixin popover-link" id="foot-weixin">加微信好友</a>            <a target="_blank" class="down-app" href="/download/app">下载APP</a>        </section>    </hgroup>   </footer>    </div>
+    </div>
+    <script id="msg-list-tmpl" type="text/template">
+        <%if (list.length !== 0) {_.each(list, function(data) {var minfo = data.msg_info;%>
+            <li><span><% if(minfo.isArtist){ %><a href="<%- _m.utils.artistDomain(minfo)%>"><%- _m.utils.substr(minfo.un || '', 10 ) %></a><% }else{ %><em><%- _m.utils.substr(minfo.un || '', 10 ) %></em><% } %>在 <a href="/artist/<%- minfo.threadId%>"><%- _m.utils.substr(minfo.from, 10) %></a>的主页回复了你</span></li>
+            <% });}else{ %>
+                <li class="no-msg"><span>你还没有未读消息。</span></li>
+                <% }%>
+                    <li class="more"><a href="/user/message">查看全部消息 >></a></li>
+    </script>
+    <div id="song-payment-modal" class="modal song-payment-modal fade"></div>
+    <script id="bdshare_js" data="type=tools&amp;uid=10004&amp;mini=1"></script>
+    <div id="sns-login"></div>
+    <div id="sns-bind" class="loaded">
+        <ul class="bd-acc-list">
+            <li class="bd-acc-tsina" data-dialog="1" data-acc="2" data-height="669" data-width="800">tsina</li>
+        </ul>
+    </div>
+    <script>
+    var pageCode = null;
+    pageCode = '678_1';
+    window.alogObjectConfig = {
+        product: '678',
+        page: pageCode,
+        monkey_page: pageCode,
+        speed_page: pageCode,
+
+        speed: {
+            sample: '1'
+        },
+
+        monkey: {
+            sample: '1'
+        },
+
+        exception: {
+            sample: '1'
+        },
+
+        feature: {
+            sample: '1'
+        },
+
+        cus: {
+            sample: '1'
+        },
+
+        csp: {
+            sample: '1',
+            'default-src': [{
+                match: '*bae.baidu.com',
+                target: 'Accept,Warn'
+            }, {
+                match: '*.baidu.com,*.bdstatic.com,*.bdimg.com,localhost,*.hao123.com,*.hao123img.com',
+                target: 'Accept'
+            }, {
+                match: /^(127|172|192|10)(\.\d+){3}$/,
+                target: 'Accept'
+            }, {
+                match: '*',
+                target: 'Accept,Warn'
+            }]
+        }
+    };
+
+    void
+
+    function(e, t, n, a, r, o) {
+        function c(t) {
+            e.attachEvent ? e.attachEvent("onload", t, !1) : e.addEventListener && e.addEventListener("load", t)
+        }
+
+        function i(e, n, a) {
+            a = a || 15;
+            var r = new Date;
+            r.setTime((new Date).getTime() + 1e3 * a), t.cookie = e + "=" + escape(n) + ";path=/;expires=" + r.toGMTString()
+        }
+
+        function s(e) {
+            var n = t.cookie.match(new RegExp("(^| )" + e + "=([^;]*)(;|$)"));
+            return null != n ? unescape(n[2]) : null
+        }
+
+        function d() {
+            var e = s("PMS_JT");
+            if (e) {
+                i("PMS_JT", "", -1);
+                try {
+                    e = eval(e)
+                } catch (n) {
+                    e = {}
+                }
+                e.r && t.referrer.replace(/#.*/, "") != e.r || alog("speed.set", "wt", e.s)
+            }
+        }
+        c(function() {
+            alog("speed.set", "lt", +new Date), r = t.createElement(n), r.async = !0, r.src = a + "?v=" + ~(new Date / 864e5), o = t.getElementsByTagName(n)[0], o.parentNode.insertBefore(r, o)
+        }), d()
+    }(window, document, "script", "http://img.baidu.com/hunter/alog/dp.min.js");
+    </script>
+    <script>
+    $(function() {
+        alog('speed.set', 'drt', +new Date);
+    });
+    </script>
+    <script>
+         var firstFunc=function(){
+		_m.user = null;
+		_m.uid = _m.user ? _m.user.pass_info.uid : 0;
+		_m.utils.asyncUserInfo.queried = false;
+		$win.off();
+		_m.ainfo = {'artist_id':'149619','domain':'birdhsy','name':'birdhsy'};
+		MiniPipe.setTitle('\u767e\u5ea6\u97f3\u4e50\u4eba-\u767e\u5ea6\u97f3\u4e50');
+		require(['core/page-init'], function(init) {init();});
+
+		var pageId = 'artistsns-main-index';
+		(document.getElementsByTagName('head')[0]||body).appendChild(document.createElement('script')).src='http://img.baidu.com/hunter/yyrsqmonkey.min.js';
+
+		var _hmt = _hmt || [];
+		if(_m.tongjiMark){
+		_hmt.push(['_trackPageview', _m.utils.urlPath()]);     }
+		_m.tongjiMark = true;
+		(function() {
+		var hm = document.createElement('script');
+		hm.src = '//hm.baidu.com/hm.js?fd427e760a8a2b377d501fac1c0d8e6a';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(hm, s);       })();
+		$('.sns-footer').show();
+
+    }
+    var thirdFunc=function(){
+    	require(['core\/header'], function(header) {header();});      
+    }
+    
+    MiniPipe.fragmentArrive({
+        "id": "pageWrapper",
+        "html": "<div id='layout' class='widescreen-header one-col homepage page-home-index widescreenpage-home-index widescreen' ><div id='pageTop' class='page-top-holder'></div></div>",
+        "onload": ["firstFunc()"]
+    }, window.location);
+
+    MiniPipe.fragmentArrive({
+        "id": "pageTop",
+        "html": "<header id='header' class='sns-header' monkey='artistsns-head' alog-alias ='artistsns-head'><hgroup class='cf'><a class='logo' href='/'>\u767e\u5ea6\u97f3\u4e50\u4eba</a><nav class='nav'><ul class='cf'><li><a  href='/' class='active' >\u9996\u9875</a><i class='tri'></i></li><li> <a  href='/top'  >\u699c\u5355</a> </li> <li>   <a  href='/indie/musician/all/hot/all'  >\u5206\u7c7b</a>                       </li>            <li>    <a target='_blank' href='http://www.showstart.com/event/list'  >\u6f14\u51fa</a>                    </li>                          <li>           <a target='_blank' href='/tbang?pst=ydaohang'  >T\u699c</a>                    </li>          <li>        <a target='_blank' href='/download/app'  >App\u4e0b\u8f7d</a>            </li>       </ul>   </nav>   <section class='center-box'>          <div class='search clearfix'>             <input type='button' class='search-btn'>             <div class='search-input-wrap'>                  <div class='search-input-inner'>                       <input type='text' placeholder='\u641c\u7d22\u97f3\u4e50\u4eba\u3001\u5355\u66f2' class='search-input'/>                  </div>                <div class='sub-wrap'>                  <ul class='sug'></ul>                  </div>               </div>        </div>     </section>     <section class='user-info'></section>    </hgroup></header>",
+        "onload": ["thirdFunc()"],
+        "parent": "pageWrapper"
+    }, window.location);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+  	.aa{
+  		font-size: 20px;
+  		color:red;
+  	}
+  </style>
+</head>
+
+<body>
+	11111111111111111
+	22222222222
+	<!--start-->
+	<div id="aa" class="aa">
+		123<br>
+	<img src="http://cos.myqcloud.com/11001089/wcloudOpen/bjmcManager/42/picType/aeaeb6da781497dbab344ba5dc19581a.jpg">
+	</div>
+	<OBJECT style="display:none;" classid="CLSID:8856F961-340A-11D0-A96B-00C04FD705A2" id="WebBrowser"></OBJECT> 
+	<!--end-->
+	444444444444444444
+	555555555555555555
+	
+	<input type="button" onclick="aa()" />
+	
+<script type="text/javascript">
+var aa=function(){
+	html=document.body.innerHTML;
+	html=html.split('<!--start-->')[1];
+	html=html.split('<!--end-->')[0];
+	document.body.innerHTML=html;
+	//window.print();
+	document.body.ExecWB(6,1);
+}
+</script>
+</body>
+</html>

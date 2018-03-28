@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#config timefmt="%B %d %Y %H:%M:%S"-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" name="viewport" />
+<title>【火车票-去哪儿网Qunar.com</title>
+<style>
+html{
+    background:#f3f3f3;
+    color:#333333;
+    font-size:16px;
+}
+/* 清除某些元素在不同浏览器下内外补白不同造成的影响 */
+body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,figure,form,fieldset,legend,input,textarea,button,p,blockquote,th,td,pre,xmp{
+    margin:0;
+    padding:0;
+}
+/* 设置默认字集及行高，表单及某些特殊元素不继承祖先font相关属性 */
+body,input,textarea,button,select,pre,tt,code,kbd,samp,optgroup,option{
+    line-height:1.5;
+    font-family:arial, '\5b8b\4f53', '\5fae\8f6f\96c5\9ed1', verdana, helvetica, sans-serif;
+}
+/* 清除单元格边距并让边框合并 */
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+    text-align:left;
+}
+
+
+/* 清除某些元素不继承祖先元素font-size的影响 */
+h1,h2,h3,h4,h5,h6,input,textarea,button,select,small{
+    font-size:100%;
+}
+
+/*a:hover{
+    color:#f60;
+}*/
+.rmb{ font-weight:normal; font-size:12px; font-family:arial; }
+.num{ font-family:Tahoma,Simsum; }
+.color01{ color:#ff075b; }
+/* 预设清除浮动 */
+#hd,#bd,#ft,.hd,.bd,.ft,.g-clear,.g-mod,.g-mod .inner{
+    *zoom:1;
+}
+#hd:after,#bd:after,#ft:after,.hd:after,.bd:after,.ft:after,.g-clear:after,.g-mod:after,.g-mod .inner:after{
+    display:block;
+    overflow:hidden;
+    height:0;
+    clear:both;
+    content:'\0020';
+}
+body{
+	min-width:300px;
+	max-width:540px;
+	font-size:16px;
+	margin:0 auto;
+	padding:0 10px;
+	padding-top:44px;
+}
+.clear{clear:both;height:0px;line-height:0px;}
+.clear:after {content:".";height:0px;line-height:0px;visibility:hidden;clear:both;}
+.clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+</style>
+
+<style>
+	.qn_qcode{
+		/*max-width:540px;
+		min-width:320px;*/
+		margin:0 auto;
+	}
+	.qn_qcode h3{
+		margin-bottom:10px;
+	}
+	.qn_qcode h3,.qn_qcode ul{
+		color:#666666;
+		font-size:12px;
+		font-weight:normal;
+		
+	}
+	.qn_qcode ul{
+		color:#999999;
+		margin-top:10px;
+	}
+	.qn_qcode .qn_qcodeOuter{
+		position:relative;
+	}
+	.qn_qcode .qn_qcodeOuter a{
+		position:absolute;
+		display:block;
+		right:0;
+		top:0;
+		color:#339900;
+	}
+	.qn_qcode .qn_qcodeOuter img{
+		float:left;
+	}
+	.qn_qcode .qn_qcodeOuter em{
+        position: absolute;
+        display: block;
+        width:25px;
+        height:25px;
+        border-radius: 20px;
+        background:limegreen;
+        border: 3px solid green;
+    }
+    .qn_qcode .submitParent{
+    	text-align:center;
+    	margin:10px auto 0;
+    	
+    	width:200px;
+    }
+    .qn_qcode .btn{
+    	float:left;
+    	color:#FFFFFF;
+    	text-decoration:none;
+    	width:60px;
+/*    	text-align:center;*/
+    	margin:0 10px;
+    	height:30px;
+    	line-height:30px;
+    	border-radius:2px;
+    	background:#ff7100;
+    }
+    .qn_qcode .btn.cancel{
+    	background:#c2c2c2;
+    }
+</style>
+</head>
+<body>
+<!-- qcode -->
+<div class="qn_qcode">
+	<iframe style="display: none;" name="xxx_qcode" id="xxx_qcode"></iframe>
+	<form id="frm" target="xxx_qcode" method="post" action="xxx/submitCaptchaImg">
+		<input type="hidden" value="" name="result" />
+		<input type="hidden" value="" name="md5" />
+	</form>
+	<h3>请点选验证码：</h3>
+	<div>
+	<div id="picParent" class="qn_qcodeOuter clearfix">
+		
+		<a id="refresh" href="javascript:void(0)">刷新</a>
+<!-- 		<img id="codeImg" alt="再次刷新"  src="https://kyfw.12306.cn/otn/passcodeNew/getPassCodeNew?module=login&rand=sjrand&0.7608889256536492"/> -->
+		<img id="codeImg" alt="再次刷新" src="http://source.qunar.com/site/images/new_main/m_loading.gif" />
+	</div>
+	</div>
+	<div class="submitParent clearfix">
+		<a href="javascript:void(0)" class="btn" id="submit">确定</a>
+		<a href="javascript:void(0)" class="btn cancel" id="cancel">关闭</a>
+	</div>
+	<ul><li>根据验证码图片顶部的文字提示选择点击相应的图片，然后进行提交</li></ul>
+</div>
+<!-- /qcode -->
+
+<script src="http://qunarzz.com/m_bus/prd/scripts/zepto.js"></script>
+<script>
+	(function(){
+	/**20150316 dravin.feng **/
+	var loading="http://source.qunar.com/site/images/new_main/m_loading.gif";
+	
+	var imgUrl='http://10.86.140.76/qunar/getCaptchaImg4help.jsp';
+	var submitUrl='http://10.86.140.76/qunar/submitCaptchaImg.jsp';
+	var ls={},md5="";
+    var idx=0;
+	
+	
+	
+	
+    var getScrollLength=function(){
+        //TODO top的值 在 页面尚未onload之前调用，值可能为 window
+        var top=window.scrollTop || document.documentElement.scrollTop || document.body.scrollTop;
+        var left=window.scrollLeft || document.documentElement.scrollLeft || document.body.scrollLeft;
+        return {'scrollLeft':left,'scrollTop':top};
+    }
+    
+    var removeAll=function(){
+        for(var i in ls){
+            $('#'+i).remove();
+        }
+        ls={};
+        md5='';
+    }
+    var addPoint=function(e){
+        var len=getScrollLength().scrollTop;
+        var dim=$(document.getElementById("codeImg"))[0].getBoundingClientRect();
+        var dom=$('<em class="point" onclick="" id="point'+idx+'"></em>').appendTo('#picParent');
+
+        ls['point'+idx]=[parseInt(e.clientX-dim.left,10),parseInt(e.clientY-dim.top,10)];
+        dom.css({left: parseInt(ls['point'+idx][0]-15,10),top:parseInt(ls['point'+idx][1]-15,10)});
+//            dom.click(removePoint);
+        idx++;
+    }
+    var removePoint=function(e){
+        ls[this.id]&& (delete ls[this.id]);
+        $(this).remove();
+        e.preventDefault();
+        e.stopPropagation();
+    }
+    var  changePic=function(){
+    	removeAll();
+    	$('#codeImg').attr('src',loading);
+    	
+    	
+    	$.ajax({
+	        	url:imgUrl,
+	        	type:'GET',
+	        	dataType:'jsonp',
+	        	success:function(rs){
+	        		if(rs && rs.ret){
+		    			rs.data && rs.data.img && $('#codeImg').attr('src','data:image/jpg;base64,'+rs.data.img);
+		    			rs.data && rs.data.md5 && (md5=rs.data.md5);
+		    		}else{
+		    			alert('提示：' +rs.errmsg+'; 请重刷试试~');
+		    		}
+	        	},
+	        	error:function(rs){
+	        		if(rs && rs.ret){
+		    			rs.data && rs.data.img && $('#codeImg').attr('src',rs.data.img);
+		    			rs.data && rs.data.md5 && (md5=rs.data.md5);
+		    		}else{
+		    			alert('提示：' +rs.errmsg+'; 请重刷试试~');
+		    		}
+	        	}
+        });
+ 
+    }
+    changePic();
+    var submit=function(){
+	    var temp=[];
+        for(var i in ls){
+            temp=temp.concat(ls[i]);
+        }
+       
+        if(!temp.length){
+        	alert('验证码不能为空，请点选后再进行提交');
+        	return;
+        }
+        $.ajax({
+	        	url:submitUrl+'?md5='+encodeURIComponent(md5)+'&result='+encodeURIComponent(temp.join(',')),
+	        	type:'GET',
+	        	dataType:'jsonp',
+	        	success:function(rs){
+	        		if(rs && rs.ret){
+	        			changePic();
+	        		}else{
+	        			alert(rs.errmsg);
+	        		}
+	        	},
+	        	error:function(rs){
+	        		if(rs && rs.ret){
+	        			alert('提交成功~');
+	        			changePic();
+	        		}else{
+	        			alert(rs.errmsg);
+	        		}
+	        	}
+        });
+
+        
+    }
+	var cancel=function(){
+		window.close();
+	}
+    
+    $("#refresh").click(changePic);
+    $("#codeImg").click(addPoint);
+    $('#picParent').delegate('em.point','click',removePoint);
+    $('#submit').click(submit);
+    $('#cancel').click(cancel);
+    })();
+</script>
+<script type="text/javascript">
+//<!-- beacon.start -->
+(function() {
+	window._ba_utm_init = function(GA) {
+		var ga = this;
+		window['_ba_utm_l'] = 't';
+		window['_ba_utm_s'] = '237';
+	};
+	//-- load ga script
+	var s = document.createElement('script');
+	s.src = 'http://bc.qunar.com/js/ga.min.js';
+	var head = document.getElementsByTagName('head');
+	if (head&&head[0]) { head[0].appendChild(s); }
+})();
+//<!-- beacon.end -->
+</script>
+</body>
+</html>

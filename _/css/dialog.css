@@ -1,0 +1,72 @@
+.zq_box{
+	color:#535353;
+	font-family:"Microsoft YaHei","微软雅黑","Microsoft JhengHei","华文细黑",STHeiti,MingLiu;
+	font-size:14px;
+	padding:12px 13px 0 0;
+	position:absolute;
+	z-index: 100;
+}
+.zq_box table{	
+	width:100%;
+	height:auto;	
+}
+.zq_box table td{
+	vertical-align:top;	
+}
+.zq_box .zq_boxContent{
+	background-color:#FFFFFF;
+	border:1px solid #F7F5F5;
+	box-shadow: 0 2px 5px rgba(34, 25, 25, 0.4);
+	border-radius: 4px;
+	}
+.zq_box .zq_boxContent .zq_boxClose{
+	display: block;
+	position:absolute;
+	right:0px;
+	top:0px;
+	height:28px;
+	line-height:28px;
+	width:28px;
+	background:url("http://fe.dev.com/fe-core/img/zq_close.png") no-repeat scroll top right transparent;
+	outline:none;
+	z-index: 1;
+}
+.zq_box .zq_boxContent .zq_BoxDetail{
+	word-wrap:break-word;
+	word-break:break-all;
+}
+.zq_box .zq_boxContent .zq_boxBtn{	
+	text-align:right;	
+	padding:10px 0 20px 0;
+	margin-right:15px;
+	
+}
+.zq_box .zq_boxContent .zq_boxBtn .zq_boxBtn_common{
+	letter-spacing:1px;
+	color:#262626;
+	font-size:12px;	
+	font-family:"宋体",Geneva, Arial, Helvetica, sans-serif;
+	border:1px solid #a6a6a6;
+	padding:5px 20px;
+	*padding:4px 12px;
+	border-radius: 2px;
+	margin:4px;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e1e1dd));
+	background:-moz-linear-gradient(top,#ffffff,#e1e1dd);
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, EndColorStr='#e1e1dd', StartColorStr='#ffffff');
+}
+.zq_overlay{
+	background: none repeat scroll 0 0 #000000;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+	height: 100%;
+    left: 0;
+    position: fixed;
+    _position:absolute;
+    top: 0;
+    width: 100%;
+	z-index: 100;
+}
+html,body{
+	height:100%;
+}

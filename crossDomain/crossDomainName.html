@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>crossDomain</title>
+ 
+</head>
+
+<body>
+	<iframe id="aa" name="aa"></iframe>
+	
+<script>
+	window.name="aaaaa123152142{}dafdaf";
+	// var a=document.createElement('script');
+	// a.src="./b.html?a=123&b=456";
+	// document.body.appendChild(a);
+	document.getElementById('aa').src="./b.html?a=123&b=456";
+	var aa=function(){
+		console.log(arguments)
+	}
+</script>
+
+
+
+</body>
+</html>

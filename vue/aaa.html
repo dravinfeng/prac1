@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>例子</title>
+  <script type="text/javascript" src="http://static.runoob.com/assets/vue/1.0.11/vue.min.js"></script>
+  <script type="text/javascript" src="./artTemplate.js"></script>
+  <script type="text/javascript">
+	var rs=[],number=1000;
+	for(var i=0;i<number;i++){
+		rs.push({message: 'Foo'+i });
+	}
+	var state=true;
+	var sort=function(){
+		var st=state;
+		state=!state;
+		rs.sort(function(a,b){
+			
+			return (st ? a.message<b.message : a.message>b.message);
+			
+		});
+		
+	}
+  </script>
+</head>
+
+<body>
+	<ul style="width:200px;float:left;" id="example-1">
+	<li @click="aa" v-for="item in items">
+	{{ item.message }}
+	</li>
+	</ul>
+	<ul id="example-2" style="color:red;float:left;"></ul>
+	<ul id="example-3" style="color:blue;float:left;"></ul>
+	<ul id="example-4" style="color:blue;float:left;"></ul>
+
+	
+<script type="text/javascript">
+
+
+var nativeJs=function(){
+	var ls=[];
+	var e2=document.getElementById('example-2')
+	console.time('b');
+	
+	for(var i=0;i<number;i++){
+		if(!rs[i].v){
+			rs[i].v='<li>'+rs[i].message+'</li>';
+		}
+		
+		ls.push(rs[i].v);
+	}
+	//console.timeEnd('b');
+	e2.innerHTML=ls.join('');
+	console.timeEnd('b');
+}
+
+var vueJs=function(){
+	console.time('a');
+	var example1 = new Vue({
+		el: '#example-1',
+		data: {
+		items: rs
+		},
+		methods:{
+			aa:function(){
+			sort();
+			console.time('a');
+			example1.$data.items=rs;
+			console.timeEnd('a');
+			nativeJs();
+		}
+	    }
+	});
+	console.timeEnd('a');	
+}
+
+var artTemp=function(){
+	var tmpl='{{each $data as value i}}\
+	<li>{{value.message}}</li>\
+	{{/each}}';
+	console.time('c');
+	var TMPL=template.compile(tmpl);
+	var html=TMPL(rs);
+	document.getElementById('example-3').innerHTML=html;
+	console.timeEnd('c');
+}
+
+var artTempCompile=function(){
+	var tmpl='{{each $data as value i}}\
+	<li onclick="sort(1)">{{value.message}}</li>\
+	{{/each}}';
+	var TMPL=template.compile(tmpl);
+	console.time('d');
+	var html=TMPL(rs);
+	document.getElementById('example-4').innerHTML=html;
+	console.timeEnd('d');
+}
+
+vueJs();
+nativeJs();
+artTemp();
+artTempCompile();
+
+</script>
+</body>
+</html>

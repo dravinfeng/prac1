@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>获取正整数二进制中1的个数</title>
+
+	</head>
+
+	<body>
+		<script>
+			function getRandom(n, ls) {
+				var r = Math.floor(Math.random() * n);
+				if(!ls[r]){
+					return r;
+				}else{
+					return arguments.callee(n,ls);
+				}
+			}
+
+			function randomArr(n){
+				var ls=[];
+				for(var i=0;i<n;i++){
+					ls[getRandom(n,ls)]=i+1;
+				}
+				console.log(ls);
+			}
+			// function randomArr(n) {
+				// var ls = [];
+				// for (var i = 0; i < n; i++) {
+					// ls[i]=i+1;
+				// }
+// 				
+				// ls.sort(function(i,d){
+					// return Math.random()>0.5 ? 1:-1;
+				// })
+				// console.log(ls);
+			// }
+			
+			console.time('aa')
+			randomArr(100)
+			console.timeEnd('aa')
+
+		</script>
+	</body>
+</html>

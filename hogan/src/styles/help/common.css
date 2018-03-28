@@ -1,0 +1,126 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5 tahoma,arial,sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:"courier new",courier,monospace; }
+small { font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; color:#0069ca; }
+a:hover { text-decoration:none; color:#f60; }
+sup { vertical-align:text-top; }
+sub { vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+.fix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.fix{*zoom:1;}
+body{color:#555555;background:#fff;}
+.wt950{width:950px;margin:0 auto;}
+.lw750{width:750px;}
+.rw191{width:191px;}
+.fl{float:left;}
+.fr{float:right;}
+.mlb10{margin-left:10px;margin-bottom:10px;padding:0px 5px 10px 5px;}
+.mlb3{margin-left:10px;margin-bottom:10px;padding:0px 5px 3px 5px;}
+.mt10p15{margin-top:10px;padding-bottom:15px;}
+.mtb20{margin:20px 0px;}
+.ml70{margin-left:70px;}
+.ml60{margin-left:60px;}
+.ml30{margin-left:30px;}
+.ml10{margin-left:10px;}
+.mt6{margin-top:6px;}
+.mt10{margin-top:10px;}
+.mt8{margin-top:8px;}
+.mt30{margin-top:30px;}
+.mb10{margin-bottom:10px;}
+.mb20{margin-bottom:20px;}
+.mrl5{margin-left:5px;margin-right:5px;}
+.mr50d{margin-right:50px;display:inline;}
+
+.ptrbl10{padding:10px 5px 8px 5px;margin:0px 10px;}
+.ptrbl15{padding:15px 5px 3px 5px;margin:0px 10px;}
+.ptbl10{padding:10px 0px 6px 6px;margin-top:6px;}
+.ptbl6{padding:6px 0px 6px 6px;}
+.ptrblc15{padding:15px;}
+.ptrlb10{padding:10px;}
+.prlb10{padding:0px 10px 10px 10px;}
+
+.ptbl15{padding:4px 0px 1px 15px;}
+.plr5{padding-left:5px;padding-right:5px;}
+.pl48{padding-left:48px;}
+.pt8{padding-top:8px;}
+.pt15{padding-top:15px;}
+.pb12{padding-bottom:12px;}
+.pb7{padding-bottom:7px;}
+
+.txt_center{text-align:center;}
+.inputcheck{height: 13px;margin: 0px 6px 0px 0px;vertical-align: middle;width: 13px;_margin-top:3px;}
+.corred{color:#ff6600;}
+.crred2{color:#ff075b;}
+.crblue{color:#0069ca;}
+.fmArial{font-family:Arial;}
+.hidden{display:none;}
+.hide{display:none;}
+.crgay{color:#888888;}
+.pr{font-family:Arial;color:#ff075b;}
+.prl{color:#ff075b;font-size:18px;font-family:Arial;}
+.prw{color:#ff075b;font-family:Arial;font-weight:700;}
+.bottline,.topline{background:url(http://source.qunar.com/site/images/new_main/zyf/dline_bottom.jpg) repeat-x left bottom;}
+.topline{background-position:left top;}
+.bdtop{border-top:#ddd 1px solid;}
+.bdbottom{border-bottom:#ddd 1px solid;}
+.rmb{ font-style:normal; font-family:Arial;}
+/* jquery */
+.fix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.fix{*zoom:1;}
+.helpnote_layer {display:none;position:absolute;width:100%;background:#000;z-index:10000;left: 0px ;top:0px;opacity:0.2;filter:Alpha(opacity=20) ;}
+.note_box{width:358px;display:block;position:absolute;z-index:10000;background:#fff;border:#999 1px solid;text-align:left;margin:0 auto;top:50%;left:50%;*left:30%;}
+.note_box .note_text{padding:30px 10px 16px 10px;font-size:14px;font-weight:800;text-align:center;line-height:24px;}
+.note_box .note_text .bt_width{width:120px;margin:26px auto 0px auto;text-align:center;}
+.note_box .note_text .bt_sure {font-size:12px;font-weight:100;float:left;margin-right:10px;width:50px;height:22px;line-height:22px;text-align:center;background:url(http://source.qunar.com/site/images/new_main/zyf/icon_img.png) no-repeat 0px -66px;color:#000;}
+
+.note_box b{display:block;width:15px;height:15px;position:absolute;right:8px;top:9px;}
+.note_box b a{cursor:pointer;display:block;width:30px;height:30px;text-indent:-99999em;}
+.log_form{text-align:left;font-size:12px;font-weight:100;margin:-20px -3px 0px -3px;}
+.log_form ul {margin:10px 0px 0px 34px;}
+.log_form ul li{margin-bottom:8px;}
+.log_form ul li em{letter-spacing:6px;}
+.input1{height:20px;line-height:20px;vertical-align:middle;border:#ccc 1px solid;margin-right:6px;}
+.login{width:50px;height:22px;margin:0px 10px 0px 48px;line-height:22px;border:0px;text-align:center;vertical-align:middle;background:url(http://source.qunar.com/site/images/new_main/zyf/icon_img.png) no-repeat 0px -66px;}
+
+.text_cen{font-size:14px;font-weight:100;line-height:24px;}
+.ui-widget-overlay{background:#000;filter:alpha(opacity=20);-moz-opacity:0.2;}
+.ui-widget-content{font-size:14px;font-weight:800;text-align:center;line-height:24px;background:#fff;}
+.ui-dialog .ui-dialog-content{padding:20px 15px 10px 15px;}
+.ui-dialog .ui-dialog-buttonpane button{border:0 none;background:none;overflow:visible;vertical-align:middle;cursor:pointer;font-family:simsun;margin:0px 0px 0px 6px;}
+.ui-dialog .ui-dialog-buttonpane button em,.text_cen .help_tip{background:url(http://source.qunar.com/train_tts/train_pay.png) no-repeat 0px 0px;}
+
+.ui-dialog .ui-dialog-buttonpane button em{display:inline-block;height:30px;padding-left:10px;background-position:0px -413px;line-height:30px;text-align:center;font-size:14px;font-weight:normal;color:#555;text-decoration:none;white-space:nowrap;cursor:pointer;}
+.ui-dialog .ui-dialog-buttonpane button em em{display:block;padding-left:0px;padding-right:10px;background-position:100% -456px;}
+
+.ui-dialog .ui-dialog-buttonpane{padding:10px 0px 15px 0px;}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset{float:none;text-align:center;}
+.ui-widget-content a{color:#0069CA;}
+.ui-widget-header{background:url(http://source.qunar.com/site/images/2011/search/dotline_bottom.gif) repeat-x left bottom;color:#555;border:#fff 1px solid;}
+.ui-widget-header .ui-icon{width:22px;height:22px;background:url(http://source.qunar.com/site/images/new_main/zyf/icon_img.png) no-repeat 1px -102px;}
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon{width:22px;height:22px;background:url(http://source.qunar.com/site/images/new_main/zyf/icon_img.png) no-repeat 0px -101px;border:0px;}
+.ui-dialog .ui-dialog-titlebar-close span{}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus{background:none;border:0px;}
+.ui-dialog .ui-dialog-titlebar .red{color:#ff075b;text-align:center;}
+
+.text_cen .help_tip{background-position:-75px -42px;width:18px;height:14px;display:inline-block;overflow:hidden;vertical-align:middle;}
+.ui-dialog .ui-dialog-title{float:none;}
+.ui-dialog  .ui_boxtip{font-weight:100;text-align:left;font-size:12px;width:330px;}
+.ui-dialog  .ui_boxtip li{line-height:24px;background:url(http://source.qunar.com/train_tts/dot.gif) no-repeat left 12px;padding-left:12px;}
+.ui-dialog .pay_contiue{margin-top:15px;border-top:#ddd 1px solid;padding-top:10px;width:330px;}
+.ui-dialog .pay_contiue a{font-size:12px;color:#0069ca;font-weight:100;text-decoration:underline;}
+.ui-dialog .pay_contiue a:hover{color:#f60;}
+.ui-dialog .blue_fm{color:#0069ca;}
+.ui-dialog .pay_contiue .bt_paycont{text-decoration:none;display:inline-block;width:75px;height:23px;line-height:23px;text-align:center;border:0px;cursor:pointer;color:#fff;margin:0px 15px 0px 6px;background:url(http://source.qunar.com/train_tts/bluebutton.png) no-repeat left top;}
+.ui-dialog .pay_contiue .bt_paycont:hover{color:#fff;}
+
+
+
+
+

@@ -1,0 +1,20 @@
+@charset "utf-8";
+/**
+* module: m-dialog
+* Author: baoguo.wang@qunar.com
+* Time: 2014.9.18
+*/
+.m-dialog{ width: 360px; padding: 8px 10px 10px; background: #fff; border: 0px solid #bbb;}
+.m-dialog .m-dialog-hd{ border-bottom: 1px solid #dadada; font-size: 14px; padding-bottom: 10px; line-height: 18px; overflow: hidden;}
+.m-dialog-hd span{ float: right; width: 14px; height: 14px; margin-top: 2px;}
+.m-dialog-hd .close-ico{ display:block;  background: url("http://simg4.qunarzz.com/hotel/ota/close.png") no-repeat center center; height: 14px; width: 14px;}
+.m-dialog-bd{ margin-top:16px; font-size: 14px;}
+.m-dialog-bd p{ text-indent: 20px; line-height: 18px;}
+.m-dialog-btn{ margin: 18px 0; text-align: center;}
+.m-dialog-btn .g-btn{ font-size: 12px; height: 18px; line-height: 16px;}
+.m-dialog-btn .g-btn-commit{ margin-right: 8px;}
+.m-dialog-ft p{ padding-left: 20px; font-size: 12px;}
+.m-dialog-ft p span{ color: #fd0659;}
+.m-dialog-bd p.retitle { text-indent: 0; background: url("http://source.qunar.com/tts/images/demo/ico_warn_m.png") no-repeat; font-size: 14px; line-height: 20px; padding: 6px 0 6px 40px;}
+
+

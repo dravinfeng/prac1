@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>imgSplit</title>
+	<script src="http://q.qunarzz.com/jquery/prd/jquery-1.7.2.js"></script>
+	</head>
+	<body>
+		<form action="" method="post" >
+		<input name="file" type="file" id="file" />
+		<input type="submit" value="ok" />
+		</form>
+<canvas id="cvs" ></canvas>
+
+<script>
+	var cvs=$('#cvs')[0];
+	var content=cvs.getContext('2d');
+	var url,hList=[];
+	var img=new Image();
+	img.onload=function(){
+		cvs.width=img.width;
+		
+		
+		var mod=img.height%3;
+		var h=Math.floor(img.height/3);
+		hList[0]=hList[1]=h;
+		hList[2]=h+mod;
+		cvs.height=100;
+		content.drawImage(img,0,0,img.width,100,0,0,img.width,100);
+		url=cvs.toDataURL('image/jpeg', 1);
+		var hd=url.split(',')[0]+',';
+		
+		// var dt=atob(url.split(',')[1]);
+		// var temp=[];
+		// for(var i=0;i<dt.length;i++){
+			// temp.push(dt.charCodeAt(i));
+		// }
+		// console.log(new Uint8Array(temp))
+		// blob=new Blob([new Uint8Array(temp)], {type:'image/jpeg'});
+		
+		
+		console.log(blob)
+// 		
+// 		
+		$('<img src="'+url+'">').appendTo(document.body);
+		
+	}
+	img.src="aa.jpg";
+	
+	
+	
+</script>
+
+	</body>
+</html>

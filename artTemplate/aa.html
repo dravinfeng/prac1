@@ -1,0 +1,31 @@
+<html>
+    <head>
+    <title>artTemplate test</title>
+	<script src="./artTemplate.js"></script>
+    </head>
+    <body>
+    <div id="aa"></div>
+<!--     <script src="../prd/scripts/page/aa@1d907acbbd65fee3d8a2b9e08842edb9.js"></script> -->
+    <script>
+    	var temp='<ul>{{each a as value i}}<li>{{i}}</li>{{/each}}</ul>';
+    	
+    	var ls=[];
+		for(var i=0;i<100*1000;i++){
+			ls.push(i);
+		}
+		
+		var str='';
+		var s=new Date().getTime();
+		var render=template.compile(temp);
+		var m=new Date().getTime();
+		 str=m-s+';  ';
+		var html=render({a:ls});
+		 
+		 
+		 //document.getElementById('aa').innerHTML=html;
+		 alert(str+(new Date().getTime()-m))
+
+    	
+    </script>
+    </body>
+    </html>

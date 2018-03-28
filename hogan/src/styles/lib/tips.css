@@ -1,0 +1,37 @@
+@charset "utf-8";
+/*
+** Css tips
+** Version: 3.0.0
+** Author Joy Du(飘零雾雨)
+** Edit at 2012.3.1
+*/
+
+.g-tips{display:inline-block;*display:inline;*zoom:1;position:relative;padding:1px 5px;border:1px solid #f8d3a7;background-color:#fffedf;}
+.g-tips .arrow-out,.g-tips .arrow-in{position:absolute;overflow:hidden;width:0;height:0;border-width:6px;border-style:dashed dashed solid dashed;}
+.g-tips .close{ position:absolute; right:5px; top: 5px; background:url(http://source.qunar.com/site/images/tts/classic/ico.bxclose.gif) no-repeat; width:10px; height:10px; cursor:pointer; }
+.g-tips .tips-info{ position:relative; }
+/* 箭头在左边 */
+.tips-left .arrow-out{top:3px;left:-13px;border-color:transparent #f8d3a7 transparent transparent;}
+.tips-left .arrow-in{top:3px;left:-12px;border-color:transparent #fffedf transparent transparent;}
+/* 箭头在top */
+.tips-top .arrow-out{top:-12px; left:50%; margin-left:-6px; border-color:transparent  transparent #f8d3a7 transparent;}
+.tips-top .arrow-in{top:-11px; left:50%; margin-left:-6px; border-color: transparent transparent #fffedf transparent;}
+
+/** 保险提示层 **/
+.insur_tip{display: none; position: relative; z-index:3; }
+.insur_tip .b,.insur_tip .t{border-width:6px;border-style:solid dashed dashed dashed;width:0; height:0; font-size:0; overflow:hidden; position:absolute;}
+.insur_tip .b{border-color:#fbd5a7 transparent transparent transparent;bottom:-13px;left:50%;}
+.insur_tip .t{border-color:#ffffeb transparent transparent transparent;bottom:-12px;left:50%;}
+
+.insur_tip .tips_close{position:absolute; right:5px; top: 5px; background:url(http://source.qunar.com/site/images/tts/classic/ico.bxclose.gif) no-repeat; width:10px; height:10px;}
+.insur_tip .tips_close:hover{cursor:pointer;}
+
+.insur_tip .tips_contair{ position:absolute;right:0; top:-61px;}
+.tips_contair{position:absolute;margin:0;border:1px solid #fbd5a7;text-align:left; background-color:#ffffeb; color:#535353;line-height:20px;}
+.tips_content{padding:10px; white-space:nowrap; }
+/** \ 保险提示层 **/
+/* 错误提示 */
+.g-err-bor{ border-color:#fe0053; }
+.g-error{ position:absolute; top:-1px; z-index:300; padding:6px 0; font-size:12px; border:1px solid #f8d3a7;background-color:#fffedf;  z-index:100; overflow:hidden; }
+.g-error .error-ico{ float:left; width:16px; height:16px; margin:0 0 0 4px; background: url("http://source.qunar.com/train_tts/ico_pro.png") no-repeat scroll 0 -380px; vertical-align:top; }
+.g-error span{ display:block; padding-left:25px; word-break:break-all; word-wrap:break-word; padding-right:4px; }

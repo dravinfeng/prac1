@@ -1,0 +1,562 @@
+<html>
+    <head>
+    <title>Using window.captureEvents</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+    
+    <script>
+    
+var a=[
+           {
+               "fdid": "61",
+               "dicName": "汉族",
+               "dicCode": "1",
+               "dicDesc": "H",
+               "dicState": 1,
+               "dicType": "nationality",
+               "orderno": 1
+           },
+           {
+               "fdid": "62",
+               "dicName": "蒙古族",
+               "dicCode": "2",
+               "dicDesc": "M",
+               "dicState": 2,
+               "dicType": "nationality",
+               "orderno": 2
+           },
+           {
+               "fdid": "63",
+               "dicName": "回族",
+               "dicCode": "3",
+               "dicDesc": "H",
+               "dicState": 3,
+               "dicType": "nationality",
+               "orderno": 3
+           },
+           {
+               "fdid": "64",
+               "dicName": "藏族",
+               "dicCode": "4",
+               "dicDesc": "Z",
+               "dicState": 4,
+               "dicType": "nationality",
+               "orderno": 4
+           },
+           {
+               "fdid": "65",
+               "dicName": "维吾尔族",
+               "dicCode": "5",
+               "dicDesc": "W",
+               "dicState": 5,
+               "dicType": "nationality",
+               "orderno": 5
+           },
+           {
+               "fdid": "66",
+               "dicName": "苗族",
+               "dicCode": "6",
+               "dicDesc": "M",
+               "dicState": 6,
+               "dicType": "nationality",
+               "orderno": 6
+           },
+           {
+               "fdid": "67",
+               "dicName": "彝族",
+               "dicCode": "7",
+               "dicDesc": "Y",
+               "dicState": 7,
+               "dicType": "nationality",
+               "orderno": 7
+           },
+           {
+               "fdid": "68",
+               "dicName": "壮族",
+               "dicCode": "8",
+               "dicDesc": "Z",
+               "dicState": 8,
+               "dicType": "nationality",
+               "orderno": 8
+           },
+           {
+               "fdid": "69",
+               "dicName": "布依族",
+               "dicCode": "9",
+               "dicDesc": "B",
+               "dicState": 9,
+               "dicType": "nationality",
+               "orderno": 9
+           },
+           {
+               "fdid": "70",
+               "dicName": "朝鲜族",
+               "dicCode": "10",
+               "dicDesc": "C",
+               "dicState": 10,
+               "dicType": "nationality",
+               "orderno": 10
+           },
+           {
+               "fdid": "71",
+               "dicName": "满族",
+               "dicCode": "11",
+               "dicDesc": "M",
+               "dicState": 11,
+               "dicType": "nationality",
+               "orderno": 11
+           },
+           {
+               "fdid": "72",
+               "dicName": "侗族",
+               "dicCode": "12",
+               "dicDesc": "D",
+               "dicState": 12,
+               "dicType": "nationality",
+               "orderno": 12
+           },
+           {
+               "fdid": "73",
+               "dicName": "瑶族",
+               "dicCode": "13",
+               "dicDesc": "Y",
+               "dicState": 13,
+               "dicType": "nationality",
+               "orderno": 13
+           },
+           {
+               "fdid": "74",
+               "dicName": "白族",
+               "dicCode": "14",
+               "dicDesc": "B",
+               "dicState": 14,
+               "dicType": "nationality",
+               "orderno": 14
+           },
+           {
+               "fdid": "75",
+               "dicName": "土家族",
+               "dicCode": "15",
+               "dicDesc": "T",
+               "dicState": 15,
+               "dicType": "nationality",
+               "orderno": 15
+           },
+           {
+               "fdid": "76",
+               "dicName": "哈尼族",
+               "dicCode": "16",
+               "dicDesc": "H",
+               "dicState": 16,
+               "dicType": "nationality",
+               "orderno": 16
+           },
+           {
+               "fdid": "77",
+               "dicName": "哈萨克族",
+               "dicCode": "17",
+               "dicDesc": "H",
+               "dicState": 17,
+               "dicType": "nationality",
+               "orderno": 17
+           },
+           {
+               "fdid": "78",
+               "dicName": "傣族",
+               "dicCode": "18",
+               "dicDesc": "D",
+               "dicState": 18,
+               "dicType": "nationality",
+               "orderno": 18
+           },
+           {
+               "fdid": "79",
+               "dicName": "黎族",
+               "dicCode": "19",
+               "dicDesc": "L",
+               "dicState": 19,
+               "dicType": "nationality",
+               "orderno": 19
+           },
+           {
+               "fdid": "80",
+               "dicName": "傈僳族",
+               "dicCode": "20",
+               "dicDesc": "L",
+               "dicState": 20,
+               "dicType": "nationality",
+               "orderno": 20
+           },
+           {
+               "fdid": "81",
+               "dicName": "佤族",
+               "dicCode": "21",
+               "dicDesc": "W",
+               "dicState": 21,
+               "dicType": "nationality",
+               "orderno": 21
+           },
+           {
+               "fdid": "82",
+               "dicName": "畲族",
+               "dicCode": "22",
+               "dicDesc": "S",
+               "dicState": 22,
+               "dicType": "nationality",
+               "orderno": 22
+           },
+           {
+               "fdid": "83",
+               "dicName": "高山族",
+               "dicCode": "23",
+               "dicDesc": "G",
+               "dicState": 23,
+               "dicType": "nationality",
+               "orderno": 23
+           },
+           {
+               "fdid": "84",
+               "dicName": "拉祜族",
+               "dicCode": "24",
+               "dicDesc": "L",
+               "dicState": 24,
+               "dicType": "nationality",
+               "orderno": 24
+           },
+           {
+               "fdid": "85",
+               "dicName": "水族",
+               "dicCode": "25",
+               "dicDesc": "S",
+               "dicState": 25,
+               "dicType": "nationality",
+               "orderno": 25
+           },
+           {
+               "fdid": "86",
+               "dicName": "东乡族",
+               "dicCode": "26",
+               "dicDesc": "D",
+               "dicState": 26,
+               "dicType": "nationality",
+               "orderno": 26
+           },
+           {
+               "fdid": "87",
+               "dicName": "纳西族",
+               "dicCode": "27",
+               "dicDesc": "N",
+               "dicState": 27,
+               "dicType": "nationality",
+               "orderno": 27
+           },
+           {
+               "fdid": "88",
+               "dicName": "景颇族",
+               "dicCode": "28",
+               "dicDesc": "J",
+               "dicState": 28,
+               "dicType": "nationality",
+               "orderno": 28
+           },
+           {
+               "fdid": "89",
+               "dicName": "柯尔克孜族",
+               "dicCode": "29",
+               "dicDesc": "K",
+               "dicState": 29,
+               "dicType": "nationality",
+               "orderno": 29
+           },
+           {
+               "fdid": "90",
+               "dicName": "土族",
+               "dicCode": "30",
+               "dicDesc": "T",
+               "dicState": 30,
+               "dicType": "nationality",
+               "orderno": 30
+           },
+           {
+               "fdid": "91",
+               "dicName": "达斡尔族",
+               "dicCode": "31",
+               "dicDesc": "D",
+               "dicState": 31,
+               "dicType": "nationality",
+               "orderno": 31
+           },
+           {
+               "fdid": "92",
+               "dicName": "仫佬族",
+               "dicCode": "32",
+               "dicDesc": "M",
+               "dicState": 32,
+               "dicType": "nationality",
+               "orderno": 32
+           },
+           {
+               "fdid": "93",
+               "dicName": "羌族",
+               "dicCode": "33",
+               "dicDesc": "Q",
+               "dicState": 33,
+               "dicType": "nationality",
+               "orderno": 33
+           },
+           {
+               "fdid": "94",
+               "dicName": "布朗族",
+               "dicCode": "34",
+               "dicDesc": "B",
+               "dicState": 34,
+               "dicType": "nationality",
+               "orderno": 34
+           },
+           {
+               "fdid": "95",
+               "dicName": "撒拉族",
+               "dicCode": "35",
+               "dicDesc": "S",
+               "dicState": 35,
+               "dicType": "nationality",
+               "orderno": 35
+           },
+           {
+               "fdid": "96",
+               "dicName": "毛难族",
+               "dicCode": "36",
+               "dicDesc": "M",
+               "dicState": 36,
+               "dicType": "nationality",
+               "orderno": 36
+           },
+           {
+               "fdid": "97",
+               "dicName": "仡佬族",
+               "dicCode": "37",
+               "dicDesc": "Y",
+               "dicState": 37,
+               "dicType": "nationality",
+               "orderno": 37
+           },
+           {
+               "fdid": "98",
+               "dicName": "锡伯族",
+               "dicCode": "38",
+               "dicDesc": "X",
+               "dicState": 38,
+               "dicType": "nationality",
+               "orderno": 38
+           },
+           {
+               "fdid": "99",
+               "dicName": "阿昌族",
+               "dicCode": "39",
+               "dicDesc": "A",
+               "dicState": 39,
+               "dicType": "nationality",
+               "orderno": 39
+           },
+           {
+               "fdid": "100",
+               "dicName": "普米族",
+               "dicCode": "40",
+               "dicDesc": "P",
+               "dicState": 40,
+               "dicType": "nationality",
+               "orderno": 40
+           },
+           {
+               "fdid": "101",
+               "dicName": "塔吉克族",
+               "dicCode": "41",
+               "dicDesc": "T",
+               "dicState": 41,
+               "dicType": "nationality",
+               "orderno": 41
+           },
+           {
+               "fdid": "102",
+               "dicName": "怒族",
+               "dicCode": "42",
+               "dicDesc": "N",
+               "dicState": 42,
+               "dicType": "nationality",
+               "orderno": 42
+           },
+           {
+               "fdid": "103",
+               "dicName": "乌孜别克族",
+               "dicCode": "43",
+               "dicDesc": "W",
+               "dicState": 43,
+               "dicType": "nationality",
+               "orderno": 43
+           },
+           {
+               "fdid": "104",
+               "dicName": "俄罗斯族",
+               "dicCode": "44",
+               "dicDesc": "E",
+               "dicState": 44,
+               "dicType": "nationality",
+               "orderno": 44
+           },
+           {
+               "fdid": "105",
+               "dicName": "鄂温克族",
+               "dicCode": "45",
+               "dicDesc": "E",
+               "dicState": 45,
+               "dicType": "nationality",
+               "orderno": 45
+           },
+           {
+               "fdid": "106",
+               "dicName": "崩龙族",
+               "dicCode": "46",
+               "dicDesc": "B",
+               "dicState": 46,
+               "dicType": "nationality",
+               "orderno": 46
+           },
+           {
+               "fdid": "107",
+               "dicName": "保安族",
+               "dicCode": "47",
+               "dicDesc": "B",
+               "dicState": 47,
+               "dicType": "nationality",
+               "orderno": 47
+           },
+           {
+               "fdid": "108",
+               "dicName": "裕固族",
+               "dicCode": "48",
+               "dicDesc": "Y",
+               "dicState": 48,
+               "dicType": "nationality",
+               "orderno": 48
+           },
+           {
+               "fdid": "109",
+               "dicName": "京族",
+               "dicCode": "49",
+               "dicDesc": "J",
+               "dicState": 49,
+               "dicType": "nationality",
+               "orderno": 49
+           },
+           {
+               "fdid": "110",
+               "dicName": "塔塔尔族",
+               "dicCode": "50",
+               "dicDesc": "T",
+               "dicState": 50,
+               "dicType": "nationality",
+               "orderno": 50
+           },
+           {
+               "fdid": "111",
+               "dicName": "独龙族",
+               "dicCode": "51",
+               "dicDesc": "D",
+               "dicState": 51,
+               "dicType": "nationality",
+               "orderno": 51
+           },
+           {
+               "fdid": "112",
+               "dicName": "鄂伦春族",
+               "dicCode": "52",
+               "dicDesc": "E",
+               "dicState": 52,
+               "dicType": "nationality",
+               "orderno": 52
+           },
+           {
+               "fdid": "113",
+               "dicName": "赫哲族",
+               "dicCode": "53",
+               "dicDesc": "H",
+               "dicState": 53,
+               "dicType": "nationality",
+               "orderno": 53
+           },
+           {
+               "fdid": "114",
+               "dicName": "门巴族",
+               "dicCode": "54",
+               "dicDesc": "M",
+               "dicState": 54,
+               "dicType": "nationality",
+               "orderno": 54
+           },
+           {
+               "fdid": "115",
+               "dicName": "珞巴族",
+               "dicCode": "55",
+               "dicDesc": "L",
+               "dicState": 55,
+               "dicType": "nationality",
+               "orderno": 55
+           },
+           {
+               "fdid": "116",
+               "dicName": "基诺族",
+               "dicCode": "56",
+               "dicDesc": "J",
+               "dicState": 56,
+               "dicType": "nationality",
+               "orderno": 56
+           },
+           {
+               "fdid": "117",
+               "dicName": "其他族",
+               "dicCode": "57",
+               "dicDesc": "Q",
+               "dicState": 57,
+               "dicType": "nationality",
+               "orderno": 57
+           }
+       ]
+
+a.sort(function(i,j){
+	if(i.dicDesc>=j.dicDesc){
+		return 1;
+	}else{
+		return -1;
+	};
+});
+
+
+
+var map={},d;
+    for(var i=0;i<a.length;i++){
+    	d=a[i].dicDesc;
+    	!map[d] && (map[d]=[]);
+    	map[d].push({
+    		'code':a[i].dicCode,
+    		'name':a[i].dicName
+    	})
+
+    }
+    for(var i in map){
+    	map[i].sort(function(i,j){
+    		
+    		if(i.name<=j.name){
+    			return 1;
+    		}else{
+    			return -1;
+    		}
+    	})
+    }
+    
+    
+    document.write(JSON.stringify(map))
+    </script>
+    
+    </body>
+    </html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>例子</title>
+  <script type="text/javascript" src="http://127.0.0.1:8020/mzaocan/js/common/zepto.js"></script>
+</head>
+
+<body>
+<script type="text/javascript">
+
+
+var storage=(function(){
+	var objDS = window.localStorage;
+	if (objDS) {
+		return {
+			get: function(key){
+				var vl=unescape(objDS.getItem(key));
+				if(vl=='null'){
+					return '';
+				}
+				return vl;
+			},
+			set: function(key, value, exp){
+				objDS.setItem(key, escape(value));
+			},
+			del: function(key){
+				objDS.removeItem(key);
+			},
+			clear: function(){
+				objDS.clear();
+			},
+			getAll: function(){
+				var l = objDS.length, key = null, ac = [];
+				for (var i = 0; i < l; i++) {
+					key = objDS.key(i), ac.push(key + '=' + this.getKey(key));
+				}
+				return ac.join('; ');
+			}
+		};
+	}
+	else 
+		if (window.ActiveXObject) {
+			store = document.documentElement;
+			STORE_NAME = 'localstorage';
+			try {
+				store.addBehavior('#default#userdata');
+				store.save('localstorage');
+			} 
+			catch (e) {
+			}
+			
+			return {
+				set: function(key, value){
+					store.setAttribute(key, value);
+					store.save(STORE_NAME);
+				},
+				get: function(key){
+					store.load(STORE_NAME);
+					return store.getAttribute(key);
+				},
+				del: function(key){
+					store.removeAttribute(key);
+					store.save(STORE_NAME);
+				}
+			};
+		}
+})();
+
+storage.set('aaaaaa',"123asdfgdasg");
+
+</script>
+</body>
+</html>

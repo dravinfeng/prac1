@@ -1,0 +1,40 @@
+<html> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <title>非阻塞式调用</title>   
+</head> 
+<body>  
+
+<pre>
+推荐方式是非阻塞式调用，好处是可以将beacon代码放到任何地方，而不会造成页面卡死。<a href="test_block.html">阻塞方式</a>
+</pre>
+
+<script>
+
+
+      <!-- beacon.start -->
+      (function(){
+          window._ba_utm_init = function(GA){ 
+             window['_ba_utm_l'] = 'aaa';
+             window['_ba_utm_s'] = '1';
+             window['_ba_utm_ex'] = {
+                a : 'xx' ,
+                b : 'xx' ,
+                c : 'xx' 
+             };
+          };
+          //-- load ga script
+          var s = document.createElement('script');
+          //s.src = 'http://bc.qunar.com/js/ga.min.js';
+          s.src = 'ga.js';
+          var head = document.getElementsByTagName('head');
+          if(head&&head[0]) { head[0].appendChild(s); }
+      })();
+      <!-- beacon.end -->
+    
+</script>
+
+<div style="background-color:#000; width:200px; height:200px;"></div>
+
+</body>
+</html>

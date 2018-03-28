@@ -1,0 +1,68 @@
+@charset "utf-8";
+/*
+** Css Reset
+** Author Baoguo.wang(iLeojie)
+** Edit at 2014.09.17
+*/
+
+/* comm: g-btn */
+.g-btn{padding-right:8px;cursor:pointer; border:0; outline:none; resize:none; }
+.g-btn,.g-btn span{display:inline-block;background:url(//simg4.qunarzz.com/common/btn/btn-v3.png) no-repeat;vertical-align:top;}
+.g-btn span{height:100%;padding-left:8px;}
+.g-btn span span{ padding:0 6px;background-color:#aaa;background-repeat:repeat-x;}
+/* comm: btn-operate, btn-search, btn-negative, .btn-disabled */
+.btn-operate,.btn-search,.btn-negative,.btn-disabled{height:22px;color:#fff;line-height:22px;}
+.btn-operate:hover,.btn-search:hover{color:#fff;}
+/* btn-operate */
+.btn-operate{background-position:right 0;}
+.btn-operate span{background-position:0 0;}
+.btn-operate span span{background-position:0 -23px;}
+/* btn-search */
+.btn-search{background-position:right -92px;}
+.btn-search span{background-position:0 -92px;}
+.btn-search span span{background-position:0 -115px;}
+/* btn-negative */
+.btn-negative{background-position:right -276px;color:#555;}
+.btn-negative span{background-position:0 -276px;}
+.btn-negative span span{background-position:0 -299px;}
+.btn-negative:hover{color:#555;}
+/* btn-disabled */
+.btn-disabled{background-position:right -368px;color:#aaa;cursor:default;}
+.btn-disabled span{background-position:0 -368px;}
+.btn-disabled span span{background-position:0 -391px;}
+.btn-disabled:hover{color:#aaa;}
+
+
+.g-btn02{ border:none; display:inline-block; background:#1e63e3; vertical-align:middle; outline:none; cursor:pointer; text-align:center; color:#fff; font:700 12px/30px 宋体; zoom:1;
+    -moz-border-radius:2px;
+    -ms-border-radius:2px;
+    -o-border-radius:2px;
+    border-radius:2px; }
+.btn-blue,.btn-blue:hover{ width:120px; height:30px; background:#1bb4cd;color:#fff;
+    background:-webkit-linear-gradient(#25bed4,#1ebad1,#1bb4cd);
+    background:-moz-linear-gradient(#25bed4,#1ebad1,#1bb4cd);
+    background:-ms-linear-gradient(#25bed4,#1ebad1,#1bb4cd);
+    background:-o-linear-gradient(#25bed4,#1ebad1,#1bb4cd);
+    background:linear-gradient(#25bed4,#1ebad1,#1bb4cd);
+}
+.g-blue02,.g-blue02:hover{ padding:0 17px; height:30px; background-color:#094eec;color:#fff;
+    background:-webkit-linear-gradient(#1572f2,#0e63f0,#094eec);
+    background:-moz-linear-gradient(#1572f2,#0e63f0,#094eec);
+    background:-ms-linear-gradient(#1572f2,#0e63f0,#094eec);
+    background:-o-linear-gradient(#1572f2,#0e63f0,#094eec);
+    background:linear-gradient(#1572f2,#0e63f0,#094eec);
+}
+.btn-gray,.btn-gray:hover{ width:120px; height:30px; background:#e2e2e2; color:#c3c3c3; cursor:default;
+    background:-webkit-linear-gradient(#ebebeb,#e7e7e7,#e2e2e2);
+    background:-moz-linear-gradient(#ebebeb,#e7e7e7,#e2e2e2);
+    background:-ms-linear-gradient(#ebebeb,#e7e7e7,#e2e2e2);
+    background:-o-linear-gradient(#ebebeb,#e7e7e7,#e2e2e2);
+    background:linear-gradient(#ebebeb,#e7e7e7,#e2e2e2);
+}
+.btn-blue-linear,.btn-blue-linear:hover{ width:120px; height:28px; background:#eefbfa;color:#0397ad; border:solid 1px #4bc7d9; font-weight:400;
+    background:-webkit-linear-gradient(#fff,#f7fdfd,#eefbfa);
+    background:-moz-linear-gradient(#fff,#f7fdfd,#eefbfa);
+    background:-ms-linear-gradient(#fff,#f7fdfd,#eefbfa);
+    background:-o-linear-gradient(#fff,#f7fdfd,#eefbfa);
+    background:linear-gradient(#fff,#f7fdfd,#eefbfa);
+}

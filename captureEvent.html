@@ -1,0 +1,25 @@
+<html>
+    <head>
+    <title>Using window.captureEvents</title>
+    <script language="JavaScript1.2">
+    
+    var counter = 0;
+    window.captureEvents(Event.CLICK)
+    window.onclick = myClickHandler;
+    
+    function myClickHandler(){
+      window.document.myForm.myText.handleEvent;
+    }
+    
+    function changeText(){
+      document.myForm.myText.value = counter++;
+    }
+    
+    </script>
+    </head>
+    <body>
+    <form name="myForm">
+      <input type=TEXT size=2 value="" name="myText" onClick='changeText()'>
+    </form>
+    </body>
+    </html>

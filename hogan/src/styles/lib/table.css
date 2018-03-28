@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*
+** Css Pseudo Table
+** Version: 3.0.0
+** Author Joy Du(飘零雾雨)
+** Edit at 2012.3.1
+** 规格：请使用约定的结构及类名；
+** summary: 默认行
+** detail:  展开区域
+*/
+
+.g-table .thead{border-top:1px solid #d2dfdf;border-bottom:1px solid #d2dfdf;background-color:#f7fdfb;}
+.g-table .tbody .tr{border-bottom:1px solid #dadada;}
+.g-table .tbody .tr .summary,.g-table .thead .tr{font-size:0;[;font-size:12px;];*font-size:0;font-family:arial;letter-spacing:-3px;*letter-spacing:normal;*word-spacing:-1px;}
+.g-table .tbody .tr .detail{display:none;position:relative;padding:30px 25px;border-bottom:1px solid #f2f2ee;background-color:#f7f7f3;}
+.g-table .tbody .tr .detail:before,.g-table .tbody .tr .detail:after{position:absolute;overflow:hidden;content:'';}
+.g-table .tbody .tr .detail:before{z-index:2;top:-6px;right:180px;width:16px;height:9px;background:url(@{imgPath}common/ico-list.png?v=@{version}) no-repeat 0 -10px;}
+.g-table .tbody .tr .detail:after{top:0;left:0;width:100%;height:1px;border-top:1px solid #ededed;border-bottom:1px solid #f2f2ee;background-color:#eeeeea;}
+.g-table .tbody .open .detail{display:block;}
+.g-table .cell{display:inline-block;*display:inline;*zoom:1;padding:5px 0 5px 10px;font-size:12px;sans-serif;letter-spacing:normal;word-spacing:normal;word-wrap:break-word;word-break:break-all;vertical-align:top;}
+.g-table .price{color:#fe0053;font-weight:bold;font-family:Microsoft Yahei,Arial;}
+.g-table .split{padding:0 5px;}

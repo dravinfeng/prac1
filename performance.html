@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <title>performance</title>
+
+
+</head>
+
+<body>
+	<div id="aa"></div>
+	<script>
+		var ls=[];
+		for(var i in performance.timing){
+			ls.push(i);
+		}
+		document.getElementById('aa').innerHTML=ls.join('<br>');
+	</script>
+</body>
+</html>

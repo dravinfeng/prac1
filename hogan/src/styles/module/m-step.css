@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*
+** step
+** Author Baoguo.wang(iLeojie)
+** Edit at 2014.09.18
+*/
+.step{position:absolute;top:25px;right:0px;height:22px;font-size:12px;}
+.step li{float:left;padding:4px 8px;background:#e4e4e4;line-height:14px;}
+.step li.active{background:#dbf5f3;color:#3daeb6;}
+.step li.current{background:#45c1b6;color:#ffffff;}
+.step li.jt{background: url("http://source.qunar.com/train_tts/train_pay.png") no-repeat;}
+.step li.tjactive{width:11px;height:22px;background-position:0px -232px;padding:0px;}
+.step li.tjcurrent{width:11px;height:22px;background-position:-21px -232px;padding:0px;}
+.step li.tjmr{width:11px;height:22px;background-position:-42px -232px;padding:0px;}
+.step li.tjgs{width:11px;height:22px;background-position:-64px -232px;padding:0px;}

@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>扫雷</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="http://q.qunarzz.com/jquery/prd/jquery-1.7.2.js"></script>
+</head>
+<body>
+	<canvas style="width:300px;height:300px;margin:0 auto;display:block; border:1px solid #666666" id="aa"></canvas>
+	<script>
+		var handler=$("#aa")[0];
+		var ctx=handler.getContext("2d");
+		handler.height=handler.width=309;
+		
+		
+		
+		
+		
+		
+		var init=function(){
+			var len=30;
+			
+			for(var i=1;i<=9;i++){
+				ctx.moveTo(30*i+(i-1),0);
+				ctx.lineTo(30*i+(i-1),309);
+				ctx.stroke();
+				
+				ctx.moveTo(0,30*i+(i-1));
+				ctx.lineTo(309,30*i+(i-1));
+				ctx.stroke();
+			}
+		}
+		init();
+	</script>
+</body>
+</html>

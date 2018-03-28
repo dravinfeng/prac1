@@ -1,0 +1,155 @@
+/** 
+* @description: 个人信息模块
+* @author: assassin.liu  
+* @update: 14-3-3-下午7:31
+*/
+.m-msg{margin-top: 10px;}
+.m-msg .pl01{ padding-left:10px; }
+.m-msg .fz01{ font-size:18px; }
+.m-msg .mb01{ margin-bottom:5px; }
+.m-msg .splitbox{ border-bottom:#bbeaf1 solid 1px; padding-bottom:15px; margin-bottom:5px; }
+.m-msg .g-input-text{ font-size:12px; }
+.m-msg .btn-blue{ font-weight:400; }
+    /* 提示层 */
+.msg-bd .g-tips{ color:#535353;z-index:20; }
+.msg-bd .g-tips .tips-info{ padding:10px; }
+.msg-bd .g-tips .arrow-out{ left:132px; top:-13px; }
+.msg-bd .g-tips .arrow-in{ left:132px; top:-12px; }
+    /* 模拟下拉条 */
+.m-msg .csStitle,
+.m-msg .csS_wrap{ font-size:14px; }
+
+.m-msg .csSlist a{ line-height:24px; }
+/* 输入框 */
+.m-msg .q_inpbox{ float:left; }
+    /* 标题 */
+.msg-hd{ background:#dbf5f3; height:30px; line-height:30px; border-left:solid 2px #52c5bb; padding-left:8px; font-size:14px; font-weight:700; }
+    /* 内容 */
+.msg-bd{ margin:0 10px; }
+.msg-bd .title-box{ padding:0 18px 10px 15px; overflow:hidden; font-size:12px; line-height:30px; font-weight:400; *zoom:1; }
+.msg-bd .title-box:after{ overflow:hidden; content:"\0020"; display:block; height:0; clear:both; }
+.msg-bd .title-box b{ float:left; margin-right:10px; _margin-right:7px; font-weight:700; font-size:14px; text-align:right; }
+.passenger-info,
+.contact-info,
+.expend-info{ border-bottom:solid #bbeaf1 1px; padding-bottom:10px; margin-bottom:10px; }
+        /* 乘客信息 */
+.msg-bd .passenger-info{ padding-top:10px; }
+.msg-bd .passenger-info .g-tips{ position:absolute;  top:37px; right:-2px; }
+            /* {常用乘客人 */
+.msg-bd .often{ padding:11px 0 5px 22px;margin-bottom:5px; background:#f3fcfe; position:relative; font-size:14px; *zoom:1;}
+.msg-bd .often:after{ display:block; overflow:hidden; height:0; clear:both; content:'\0020';}
+.msg-bd .often .title{width:90px; float:left;height:22px; }
+.msg-bd .often .label-box{ padding-left:90px; line-height:22px; height:auto; }
+.msg-bd .often .label-box span{ display:block; width:130px; margin-right:25px; overflow:hidden; word-wrap:break-word; word-break:break-all; height:22px; overflow:hidden; float:left; }
+.msg-bd .often .g-ipt{ _margin-top:3px; }
+.msg-bd .often .more{ position:absolute; right:31px; top:11px; color:#0069ca; cursor:pointer; }
+.msg-bd .often .on .g-ico-fold{ background-position:-85px 0; }
+            /* 常用乘客人} */
+.msg-bd .lebel-title{ float:left; width:115px; text-align:right; height:30px; line-height:30px; }
+.msg-bd .lebel-title i{ padding:0 7px; font-weight: 400; font-family: SimSum; vertical-align: middle; }
+.msg-bd .label-info{ float:left; }
+.msg-bd .pasr-detail{ *zoom:1; margin-top: 10px;}
+.msg-bd .pasr-detail:after{ display:block; overflow:hidden; height:0; clear:both; content:'\0020';}
+.msg-bd .pasr-detail .name{ width:66px; }
+.msg-bd .pasr-detail .sex{ width:68px; }
+.msg-bd .pasr-detail .birth{ margin-left:10px; }
+.msg-bd .csSelect{ width:110px; }
+.msg-bd .sex-info .csStitle{ width:98px; }
+.msg-bd .pasr-detail .button-del { float: right; width: 14px; margin-top:6px; _margin-top:7px; display: inline; }
+.msg-bd .explain{ padding-top:10px; color:#888; font-size:12px; line-height:24px; }
+.msg-bd .addperson{ padding-left:132px; margin-top:10px; }
+.msg-bd .addperson .g-btn02 i{ padding-right:5px; font-size:16px; vertical-align:middle; position:relative; top:-3px;top:-1px\0; *top:0; }
+:root .msg-bd .addperson .g-btn02 i{ top:-3px; }
+.msg-bd .pasr-detail .col1,.msg-bd .pasr-detail .col2,.msg-bd .pasr-detail .col3{ float:left; margin-right:10px; width:277px; }
+.msg-bd .pasr-detail .col2{ width:397px; }
+.msg-bd .pasr-detail .col3{ width:273px; margin-right:0; }
+.msg-bd .pasr-detail .sex-date{ display:none; margin-top:10px; }
+.pasr-detail .col1 .lebel-title,
+.pasr-detail .col2 .lebel-title{ width:70px; }
+.pasr-detail .col1 .birth,
+.pasr-detail .col2 .birth{ width:69px; }
+.pasr-detail .sex-date{ display:none; margin-top:10px; }
+.pasr-list{ *zoom:1; border-bottom:solid 1px #ececec; }
+.pasr-list ul{padding:10px 0; }
+.pasr-list ul:hover,.hover{ background-color:#f4fcfb; }
+        /*儿童票*/
+.msg-bd .children-box{ padding-top:10px; border-top:dotted 1px #ececec; }
+.pasr-detail .ticket-type,
+.pasr-detail .child-ticket{ display:inline-block; margin-right:-3px; width:130px; line-height:30px; }
+.pasr-detail .child-ticket .num{ font-weight:700; }
+.pasr-detail .ticket-type{ position:relative; *z-index:1; }
+.pasr-detail .g-ico-help{ top:-2px; position:relative; cursor:pointer; }
+.pasr-detail .children-box  .ticket-type{ _top:10px; }
+            /* 儿童票提示 */
+.msg-bd .passenger-info .children-tip{ left:-125px; width:250px; z-index:21; }
+    /* 姓名 */
+.msg-bd .pasr-detail .name-ipt{ width:184px; }
+.name-ipt .p_inp_tw .p_inp_tc{ width:180px; }
+    /* 身份证 */
+.msg-bd .identity-select .csStitle{ width:98px; }
+.msg-bd .identity  { width:184px; margin-left:10px; }
+.identity .p_inp_tw .p_inp_tc{ width:180px; }
+    /* 出生日期 */
+.msg-bd .pasr-detail .date-ipt{ width:115px; }
+.msg-bd .date-ipt .p_inp_tc{ width:111px; }
+            /* 保险 */
+.msg-bd .addperson { vertical-align:middle; }
+.msg-bd .addperson .insurance{ float:right; position:relative; *z-index:1; zoom:1; }
+.msg-bd .addperson .insurance:after{ display:block; content:"\0020"; height:0; overflow:hidden; clear:both; }
+.msg-bd .insurance .insurance-label{ float:left; margin:5px 10px 0 0; border-bottom:dashed 1px #0069ca; }
+.msg-bd .insurance .insurance-label a{ padding-bottom:2px; color:#333; }
+.msg-bd .addperson .keep{ vertical-align:middle; display:inline-block; margin-left:23px; }
+.msg-bd .insurance .csStitle{ width:98px; _width:102px; _padding-right:0px; }
+.msg-bd .insurance .secure{ width:250px; }
+                /* 不买保险tips */
+.msg-bd .notbuy-tip{ width:200px; }
+.msg-bd .notbuy-tip .arrow-out{ _top:-15px; }
+.msg-bd .notbuy-tip .arrow-in{ _top:-14px; }
+        /* 联系人信息 */
+.msg-bd .contact-info .name{ width:66px; }
+.msg-bd .contact-info .often{ margin-bottom:10px; }
+.msg-bd .savebox{ float:right; margin:7px 28px 0 0; }
+            /* 姓名 */
+.msg-bd .contact-name{ width:112px; }
+.msg-bd .contact-info .name-ipt{width:184px;} 
+.contact-name .p_inp_tw .p_inp_tc { width: 108px; }
+            /* 手机 */
+.msg-bd .contact-phone{ width:112px; }
+.contact-phone .p_inp_tw .p_inp_tc { width: 108px; }
+            /* 邮箱 */
+.msg-bd .contact-mail{}
+
+        /* 报销信息 */
+.msg-bd .invoice{ padding:0 0 5px 70px; zoom:1; line-height:34px; }
+.msg-bd .expend-info .title-box{ padding-bottom:0; margin-bottom:-1px; }
+.msg-bd .expense .lebel-title{ width:70px; }
+.msg-bd .expense .csparest{ margin-right:10px; _margin-right:8px; }
+.msg-bd .expense .csSelect{ width:170px; }
+.msg-bd .expense .csStitle{ width:158px; }
+.msg-bd .expense .label-info{ float:none; padding-left:70px; }
+.msg-bd .expense .tell{ width:80px; }
+            /* 收件人 */
+.msg-bd .expense-name{ width:220px; }
+.expense-name .p_inp_tw .p_inp_tc { width:216px; }
+            /* 手机号码 */
+.msg-bd .expense-phone{ width:220px; }
+.expense-phone .p_inp_tw .p_inp_tc { width:216px; }
+            /* 详细地址 */
+.msg-bd .expense-adress{ width:526px; margin-top:5px; }
+.expense-adress .p_inp_tw .p_inp_tc { width:522px; }
+            /* 邮编 */
+.msg-bd .post-num{ width:220px; }
+.post-num .p_inp_tw .p_inp_tc { width:216px; }
+        /* 车票购买提示 */
+.msg-bd .buy{ padding-left:68px; padding-bottom:20px; line-height:24px; }
+.msg-bd .ticketshop-info .g-tips{ position:relative; display:block; text-align:center;  }
+.msg-bd .ticketshop-info .title-box{ padding-bottom:3px; }
+    /* 提交 */
+.msg-ft{ text-align:center; }
+.msg-ft .protocol{ text-align:left; padding:10px 0 20px 79px; }
+.m-msg .q_inpbox .placeholder{ color:#999;cursor:text;position:absolute;top:-27px; left:0; }
+.m-msg .q_inp_ck_day .placeholder{ *line-height:24px; }
+/* bus-tts change */
+.lebel-tit1{ font-size: 14px; font-weight: bold; width: 66px; float:left; padding-top: 14px; text-align: right;}
+.lebel-tit{ font-size: 14px; font-weight: bold; }
+.floatr{ float: left; width: 700px;}

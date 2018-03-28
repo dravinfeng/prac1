@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>dialog</title>
+<style>
+	.aa{
+		position:relative;
+	}
+	.bb{
+		position:absolute;
+		top:0;
+		left:0;
+		display:block;
+		width:100px;
+		height:50px;
+		background:url("http://fe.zhuqu.com/fe-web/ui/img/picture_title.png") no-repeat scroll 96% center black;
+	}
+	.cc{
+		position: relative;
+		visibility:hidden;
+	}
+	.ee{
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.aa a.bb:hover{
+		background:#ffffff;
+	}
+	.aa a.bb:hover .cc{
+		background:#000000;
+		visibility:visible;
+	}
+</style>
+</head>
+
+<body>
+
+<div href="" class="aa">
+	12345
+	<a class="bb" href="">
+		<div class="cc">
+			<div class="dd">dddd</div>
+			<div class="ee">eeee</div>
+		</div>
+	</a>
+</div>
+</body>
+</html>

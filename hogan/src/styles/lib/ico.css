@@ -1,0 +1,74 @@
+@charset "utf-8";
+/*
+** Css ico
+** Version: 3.0.0
+** Author Joy Du(飘零雾雨)
+** Edit at 2012.3.1
+*/
+
+/* comm: g-ico */
+.g-ico{display:inline-block;background:url(//source.qunar.com/site/images/traintickets/common/ico.png) no-repeat;vertical-align:middle;}
+.ico-man,.ico-woman{width:11px;height:13px;margin-right:5px;}
+.ico-man{background-position:0 -224px;}
+.ico-woman{background-position:0 -250px;}
+.ico-myinfo,.ico-flyticket,.ico-hotel,.ico-tuan,.ico-package,.ico-travel,.ico-ticket,.ico-trainticket,.ico-account,.ico-myorder{width:17px;height:16px;margin-right:7px;}
+.ico-myinfo{background-position:0 0;}
+.ico-flyticket{background-position:0 -25px;}
+.ico-hotel{background-position:0 -50px;}
+.ico-tuan{background-position:0 -100px;}
+.ico-package{background-position:0 -150px;}
+.ico-travel{background-position:0 -125px;}
+.ico-ticket{background-position:0 -298px;}
+.ico-trainticket{background-position:0 -318px;}
+.ico-account{background-position:0 -275px;}
+.ico-myorder{background-position:0 -344px;}
+
+
+/** 以下是基于 g-ico02 **/
+.g-ico02{overflow:hidden;display:inline-block;*display:inline;*zoom:1;background-image:url(http://source.qunar.com/train_tts/ico03.png);background-repeat:no-repeat;line-height:10;vertical-align:middle;}
+/* type of icon */
+.g-ico-s{width:16px;height:16px;}
+.g-ico-m{width:24px;height:24px;}
+
+/* flights begining point */
+.g-ico-begin{background-position:0 0;}
+/* flights reaching point */
+.g-ico-reach{background-position:-17px 0;}
+/* train starting point */
+.g-ico-start{background-position:-34px 0;}
+/* train revolve icon */
+.g-ico-revolve{background-position:-99px -155px;}
+/* flights ending point */
+.g-ico-end{background-position:-51px 0;}
+/* sort asc icon */
+.g-ico-asc{background-position:-102px 0;}
+/* sort asc2 icon */
+.g-ico-asc2{background-position:-136px 0;}
+/* sort desc icon */
+.g-ico-desc{background-position:-119px 0;}
+/* sort desc2 icon */
+.g-ico-desc2{background-position:-153px 0;}
+
+/* close detail icon */
+.g-ico-closedetail{background-position:-170px 0;}
+
+/* fold icon */
+.g-ico-fold{background-position:-68px 0;}
+/* unfold icon */
+.g-ico-unfold{background-position:-85px 0;}
+
+/* flight ico */
+.g-ico-flight{background-position:0 -17px;}
+
+/* shift ico */
+.g-ico-transfer{background-position:-29px -17px;}
+
+/* 向右箭头灰色 */
+.g-ico-arrowr,
+.g-ico-arrowr02{ width:10px; height:19px; background-position:left -54px; }
+/* 向右箭头蓝色 */
+.g-ico-arrowr02{ background-position:-15px -54px; }
+/* 蓝色关闭 */
+.g-ico-del{ width:14px; height:13px; background-position:left -156px; }
+/* 帮助 */
+.g-ico-help{ width:16px; height:16px; background-position:-202px 0; }

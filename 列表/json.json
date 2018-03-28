@@ -1,0 +1,58 @@
+{
+    "errcode": "0",
+    "errmsg": null,
+    "ret": true,
+    "ver": null,
+    "url": null,
+    "count": 8,
+    "data": {
+        "totalCount": 300,
+        "list": [
+            {
+                "id": 23,
+                "billDate": "2012-12-12",
+                "billNo": "td420140819",
+                "totalFee": 17,
+                "operations": [
+                    {
+                        "type": "look",
+                        "name": "查看",
+                        "id": "23",
+                        "url": "insuranceInfo.html",
+                        "refresh": true
+                    },
+                    {
+                        "type": "review",
+                        "name": "重审",
+                        "id": "td420140819",
+                        "url": "/bill/admin/review?domain=dev3.tts.qunar.com&billNo=td420140819",
+                        "refresh": true
+                    }
+                ]
+            },
+                        {
+                "id": 23,
+                "billDate": "2012-12-12",
+                "billNo": "td420140819",
+                "totalFee": 17,
+                "operations": [
+                    {
+                        "type": "look",
+                        "name": "查看",
+                        "id": "23",
+                        "url": "insuranceInfo.html",
+                        "refresh": true
+                    },
+                    {
+                        "type": "review",
+                        "name": "重审",
+                        "id": "td420140819",
+                        "url": "/bill/admin/review?domain=dev3.tts.qunar.com&billNo=td420140819",
+                        "refresh": true
+                    }
+                ]
+            }
+        ]
+    },
+    "queryBean": null
+}

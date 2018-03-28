@@ -1,0 +1,25 @@
+{
+	"name":"zhuqu",
+	"version":"1.0",
+	"description":"扒拉数据专用，快乐工作，生活有滋味，住趣前端制造",
+
+	"manifest_version": 2,
+	"icons":{"48":"img/icon_48.png","128":"img/icon_128.png"},  
+	"permissions": ["tabs","https://*/*","http://list.taobao.com/itemlist/*","http://editor.dev.com/*"],
+  	"browser_action": {
+    	"default_icon": "img/icon_128.png",
+    	"default_title":"扒拉吧小工具",
+    	"default_popup": "html/index.html"
+  	},
+  	"content_scripts":[
+  		{
+  			"matches":["http://*/*"],
+  			"js":["comm/jquery.js","comm/contains.js","js/inject.js"],
+  			"run_at":"document_end",
+  			"all_frames":true
+  		}
+  	],
+  	"background":{
+  		"scripts":["comm/jquery.js","js/bg.js"]
+  	}
+}
